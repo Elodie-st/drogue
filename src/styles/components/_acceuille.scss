@@ -39,19 +39,20 @@
 .intro__text{
     color: $c-with;
 }
-@mixin surTitre--style{
+// mixin pour avoir le meme style mais $color legerment different pour loi et economie
+@mixin surTitre--style($color: $c-with){
     text-transform: uppercase;
-    color: $c-with;
+    color: $color;
     font-family: "Space Grotesk", sans-serif;
 }
-.intro, .loi, .economie{
+.intro{
     &__surTitre{
-        @include surTitre--style;
+        @include surTitre--style();
     }
 }
 .loi, .economie{
     &__surTitre{
-        color: $c-mauve;
+        @include surTitre--style($c-mauve);
     }
 }
 
