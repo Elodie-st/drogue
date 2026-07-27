@@ -1,6 +1,6 @@
 $c-with: #F8F9FA;
-$c-alt: #e41612;
-$c-text: #444;
+$c-text: #878E94;
+$c-mauve:#6466ED;
 
 $size-text: 18px;
 
@@ -45,3 +45,28 @@ $size-2medium-pc:75px;
 $size-3medium-pc:90px;
 $size-titre-pc:109px;
 $size-hauteur-pc:131px;
+
+
+.space-grotesk{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.plus-jakarta-sans{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.noto-sans{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+  
