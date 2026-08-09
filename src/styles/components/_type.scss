@@ -8,3 +8,19 @@ body {
 p{
   font-family: "Noto Sans", sans-serif;
 }
+@mixin conteneur {
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+.intro, .loi, .flashCard, .economie, .footer{
+  &__conteneur{
+    @include conteneur();
+  }
+}
+
+//footer
+.footer{
+  background-color: $c-noir;
+  padding: $size-xl-tel $size-m-tel;
+}
