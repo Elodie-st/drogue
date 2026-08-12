@@ -8,9 +8,12 @@ body {
 p{
   font-family: "Noto Sans", sans-serif;
 }
-@mixin conteneur {
-  padding-left: 19px;
-  padding-right: 19px;
+
+h2 { 
+  @include titre--h2();
+}
+h3 { 
+  @include titre--h3();
 }
 
 .intro, .loi, .flashCard, .economie, .footer{

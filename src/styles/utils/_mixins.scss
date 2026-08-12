@@ -1,0 +1,54 @@
+@mixin conteneur {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+// mixin pour avoir le meme style mais $color legerment different pour loi et economie
+@mixin surTitre--style($color: $c-with){
+    text-transform: uppercase;
+    color: $color;
+    font-family: "Space Grotesk", sans-serif;
+    margin-top: 60px;
+}
+@mixin titre--h2{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: $c-noir;
+    font-size: $size-sousTitre-tel;
+}
+
+@mixin titre--h3{
+    text-transform: uppercase;
+    font-family: "Space Grotesk", sans-serif;
+    color: $c-noir;
+    font-size: $size-m-tel;
+    margin: 0;
+}
+//btn
+@mixin btn--base{
+    display: inline-block;
+    padding: $size-m-tel;
+    font-size: $size-text-tel;
+    font-family: "Space Grotesk", sans-serif;
+    border-radius: $size-xl-tel;
+    border: none;
+    margin: $size-l-tel 0px;
+    text-decoration: none;
+}
+
+@mixin btn--primary{
+    @include btn--base();
+    background-color: $c-mauve;
+    color: $c-with;
+}
+
+@mixin btn--dark{
+    @include btn--base();
+    background-color: $c-noir;
+    color: $c-with;
+}
+
+@mixin btn--light{
+    @include btn--base();
+    background-color: #878E9490;
+    color: $c-with;
+    border: 2px solid $c-with;
+}
