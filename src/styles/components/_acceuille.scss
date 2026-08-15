@@ -10,7 +10,10 @@
     }
 }
 
-.intro::before{
+
+
+.intro {
+    &::before {
     content: '';
     display: block;
     position: absolute;
@@ -23,6 +26,13 @@
     background-size: cover; 
     z-index: 1;
     opacity: 0.6;
+    }
+    &--degrader {
+        &::before {
+            background: linear-gradient(to bottom, transparent, mistyrose),
+             url("/assets/images/image__neuron.gif");
+        }
+    }
 }
 
 .intro__titre{

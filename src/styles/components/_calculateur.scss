@@ -1,0 +1,101 @@
+.categories{
+    position: relative;
+    padding-top: $size-medium-tel;
+    //pading bootonm ?
+}
+.categories__conteneur{
+    @include conteneur();
+    display: flex;
+    flex-direction: column;
+    gap: $size-m-tel;
+}
+.groupe{
+    border: 2px solid $c-mauve;
+    border-radius: $size-l-tel;
+    padding: $size-m-tel;
+    background-color: $c-with;
+}
+.groupe__header{
+    display: flex;
+    align-items: center;
+    gap: $size-s-tel;
+    margin-bottom: $size-m-tel;
+}
+.groupe__icone{
+    font-size: $size-m-tel;
+    border-radius: $size-xxs-tel;
+}
+.groupe__titre{
+    margin: 0 ;
+}
+.groupe__texte{
+   margin: 0 0 $size-m-tel 0;
+}
+.groupe__btn{
+    display: flex;
+    flex-wrap: wrap;
+    gap: $size-s-tel;
+}
+
+
+//btn sur les groupe
+
+.group__link{
+    display: inline-block;
+    padding: $size-s-tel $size-m-tel;
+    border: 2px solid $c-gridmauve;
+    border-radius: $size-xl-tel;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: $c-gridmauve;
+    font-size: $size-text-tel;
+    font-family: "Noto Sans", sans-serif;
+    text-decoration: none;
+    color: $c-noir;
+    transition: transform 0.1s ease;
+    &:hover{
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        transform: translateY(-2px);
+    }
+    &:active{
+        box-shadow: none;
+        transform: translateY(2px);
+    }
+}
+.group__link--rose{
+    background-color: $c-rose;
+}
+.group__link--bleu{
+    background-color: $c-bleu;
+}
+.group__link--lila{
+    background-color: $c-lila;
+}
+.group__link--vert{
+    background-color: $c-vert;
+}
+
+//oeil
+.oeil{
+    position: relative;
+    width: 50vw;
+    height: 50vw;
+    background-color: $c-with;
+    border-radius: 50%;
+    border: 2px solid $c-gridmauve;
+}
+
+.oeil__iris{
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    background-color: $c-mauve;
+}
+
+.oeil__pupille{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: $c-noir;
+}
