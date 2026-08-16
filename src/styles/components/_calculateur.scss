@@ -75,6 +75,7 @@
 }
 
 //oeil
+/*
 .oeil{
     position: relative;
     width: 50vw;
@@ -83,7 +84,6 @@
     border-radius: 50%;
     border: 2px solid $c-gridmauve;
 }
-
 .oeil__iris{
     position: relative;
     width: 30vw;
@@ -92,10 +92,103 @@
     background-color: $c-mauve;
 }
 
+
 .oeil__pupille{
     position: relative;
     width: 70px;
     height: 70px;
     border-radius: 50%;
     background-color: $c-noir;
+}
+*/
+@keyframes scrollOeuil {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(calc(30vh - 100px));
+    }
+}
+.oeil{
+    position: relative;
+    top: 50%;
+    //transform: rotateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.oeil__iris{
+    width: 50vw;
+    height: 50vw;
+    background-color: $c-with;
+    border-radius: 50%;
+    border: 2px solid $c-gridmauve;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.oeil__pupille{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: $c-noir;
+    border: 15px solid $c-mauve;
+    animation: scrollOeuil linear;
+    animation-timeline: scroll(root block);
+}
+
+
+//Calculateur
+
+.calculateur{
+    &__surTitre{
+        @include surTitre--style($c-mauve);
+    }
+}
+.calculateur__conteneur{
+    @include conteneur();
+}
+.calculateur__TitreDonner{
+    @include titre--h3();
+}
+.calculateur__donner{
+    display: flex;
+    flex-direction: column;
+    gap: $size-xxs-tel;
+    .calculateur__TitreDonner{
+        margin-top: 20px;
+    }
+}
+.calculateur__imc{
+    display: flex;
+    flex-direction: row;
+    gap: $size-l-tel;
+}
+.calculateur__uniter{
+    display: flex;
+    flex-direction: row;
+    gap: $size-xxs-tel;
+}
+.calculateur__input{
+    width: 100%;
+    height: $size-titre-tel;
+    padding: $size-xxs-tel $size-text-tel;
+    border: 2px solid $c-gridmauve;
+    border-radius: $size-xxs-tel;
+    font-size: $size-text-tel;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: $size-l-tel;
+    &::placeholder{
+        color: $c-text;
+    }
+}
+.calculateur__reponce{
+    background-color: $c-lila;
+    border-radius: $size-text-tel;
+    padding: $size-m-tel;
 }

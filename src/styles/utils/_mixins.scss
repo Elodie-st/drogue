@@ -15,7 +15,7 @@
     font-size: $size-sousTitre-tel;
 }
 
-@mixin titre--h3{
+@mixin titre--h3(){
     text-transform: uppercase;
     font-family: "Space Grotesk", sans-serif;
     color: $c-noir;

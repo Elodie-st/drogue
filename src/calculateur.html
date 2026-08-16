@@ -148,27 +148,95 @@
     </div>
   </section>
 
-  <section class="economie">
+  <section class="calculateur">
+    <div class="calculateur__conteneur">
+      <p class="calculateur__surTitre">Données et mesures</p>
+      <h2>Calculateur de dose</h2>
+
+      <div class="calculateur__calcule">
+        <div class="calculateur__donner">
+          <label class="calculateur__TitreDonner">Substance</label>
+          <select class="calculateur__input" name="drogue" id="drogue-select" value="">
+            <option value="Choix">Choisissez une substance</option>
+            <option value="D_Bol">D-Bol</option>
+            <option value="EPO">EPO</option>
+            <option value="Amphet">Amphétamine</option>
+            <option value="Modafinil">Modafinil</option>
+            <option value="Nicotine">Nicotine</option>
+            <option value="Cafeine">Caféine</option>
+            <option value="Ritaline">Ritaline</option>
+            <option value="LSD">LSD</option>
+            <option value="THC">THC</option>
+            <option value="Cocaïne">Cocaïne</option>
+            <option value="MDMA">MDMA</option>
+            <option value="CBD">CBD</option>
+            <option value="Alcool">Alcool</option>
+            <option value="Sucre">Sucre</option>
+            <option value="Viagra">Viagra</option>
+          </select>
+        </div>
+
+        <div class="calculateur__imc">
+
+          <div class="calculateur__donner">
+            <label class="calculateur__TitreDonner">Poids</label>
+            <div class="calculateur__uniter">
+              <input class="calculateur__input" id="poids" type="number" value="" placeholder="00"/>
+              <p>kg</p>
+            </div>
+          </div>
+
+          <div class="calculateur__donner">
+            <label class="calculateur__TitreDonner">Taille</label>
+            <div class="calculateur__uniter">
+              <input class="calculateur__input" id="taille" type="number" value="" placeholder="000"/>
+              <p>cm</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="calculateur__donner">
+          <label class="calculateur__TitreDonner">Historique</label>
+          <div class="calculateur__uniter">
+            <input class="calculateur__input" id="heures" type="number" name="heures" min="0" max="24" step="1" value="" placeholder="ex: 2h">
+            <p>heure</p>
+          </div>
+        </div>
+      </div>
+      <div class="calculateur__reponce">
+        <h3>Dose Recommandée</h3>
+        <p>À titre indicatif uniquement. Déconseillé aux mineurs, femmes enceintes et personnes souffrant de troubles cardiaques, rénaux ou hépatiques. Demandez conseil à un médecin.</p>
+        <button class="btn__click btn__click--primary btn__click--calcule">Calculer</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="loi">
 
     <div class="loi__conteneur">
-      <p class="loi__surTitre">Emploi · Criminalité · Fiscalité</p>
-      <h2>L'après-crise de 2029</h2>
-      <p>Une étudiante en économie qui vous explique les tenants et aboutissants de l’influence de la loi DUP sur l'économie belge.</p>
+      <p class="loi__surTitre">Lire aussi :</p>
+      <h2>Témoignage</h2>
 
-      <div class="cadreInfo">
-        <div class="cadreInfo__img">
-          <video controls playsinline poster="assets/images/miniature.png">
-            <source src="assets/images/effets_loi_DUP.mp4" type="video/mp4">
-          </video>
-        </div>
         <div class="cadreInfo__contenu">
           <div class="cadreInfo__header">
             <i class="fa-regular fa-circle-question"></i>
-            <h3>Résumé</h3>
+            <h3>La Caféine</h3>
           </div>
-          <p>Laure S., mène une étude sur l’incidence de la DUP sur le taux de chômage chez les moins de 45 ans. Lors de notre entretien, elle nous explique que cette politique a contribué à une baisse de la criminalité liée au trafic de stupéfiants. La récupération des revenus auparavant captés par le crime a largement permis d'augmenter les recettes fiscales, de contribuer à la création d’emploi notamment dans les firmes pharmaceutiques qui connaissent un nouvel envol.</p>
+          <p class="cadreInfo__date">Publié le 18/02/2027 par Santé & Équilibre</p>
+          <p>« Je prenais quotidiennement 4 à 5 canettes de Monster pour tenir mes journées… mais j’étais constamment épuisé. Il m’arrivait même de dormir jusqu’à 20 heures d’affilée. Je pensais que c’était impossible d’exagérer avec une boisson aussi courante. Le calculateur m’a aidé à comprendre ma consommation réelle et à reprendre le contrôle. »</p>
+          <p class="cadreInfo__name">- Helder, étudient infographie</p>
         </div>
-        <button class="btn__click btn__click--dark">Lire Sciences et Vices →︎ </button>
+
+        <div class="cadreInfo__contenu">
+          <div class="cadreInfo__header">
+            <i class="fa-regular fa-circle-question"></i>
+            <h3>LSD et créativité</h3>
+          </div>
+          <p class="cadreInfo__date">Publié le 18/02/2027 par Arts & Équilibre</p>
+          <p>« Je pensais que plus d’expériences signifiait forcément plus de créativité. J’ai compris qu’il fallait aussi laisser de la place à mon propre esprit. En diminuant, j’ai retrouvé une forme de liberté que je croyais avoir perdue. »</p>
+          <p class="cadreInfo__name">- Luca, étudiant en option artistique</p>
+        </div>
+        <button class="btn__click btn__click--dark">Lire d’autre temoigange →︎</button>
       </div>
     </div>
   </section>
