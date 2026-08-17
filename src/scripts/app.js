@@ -60,6 +60,13 @@ function resulta() {
     var taille = document.getElementById('taille').value;
     var heures = document.getElementById('heures').value;
 
+    const { dose, rmax } = substence[drogue];
+    const tailleMetre = taille / 100;
+    const imc = poids/(tailleMetre ** 2)
 
-    console.log(taille);
+    //clacule final
+
+    const df = dose * (imc/25) * (1 / (1 + (rmax / (1 + heures))));
+
+    console.log(df);
 }
