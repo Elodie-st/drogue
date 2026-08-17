@@ -17,7 +17,7 @@ h3 {
   @include titre--h3();
 }
 
-.intro, .loi, .flashCard, .economie, .footer{
+.intro, .loi, .flashCard, .economie, .footer, .altern{
   &__conteneur{
     @include conteneur();
   }
