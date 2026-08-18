@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  font-size: $size-text;
+  font-size: clamp(#{$size-text-tel}, 1.333vw + 8px, #{$size-text-pc});
   line-height: 1.5;
   color: $c-text;
   margin: 0;

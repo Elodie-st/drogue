@@ -1,6 +1,14 @@
 @mixin conteneur {
     padding-left: 19px;
     padding-right: 19px;
+    @media (min-width: 600px) {
+        padding-left: $size-xxl-tab;
+        padding-right: $size-xxl-tab;
+    }
+    @media (min-width: 900px) {
+        padding-left:  $size-l-pc;
+        padding-right: $size-l-pc;
+    }
   }
 // mixin pour avoir le meme style mais $color legerment different pour loi et economie
 @mixin surTitre--style($color: $c-with){
@@ -12,7 +20,7 @@
 @mixin titre--h2{
     font-family: "Plus Jakarta Sans", sans-serif;
     color: $c-noir;
-    font-size: $size-sousTitre-tel;
+    font-size:clamp(#{$size-xl-tel}, 1.333vw + 26px, #{$size-sousTitre-pc});
 }
 
 @mixin titre--h3(){

@@ -77,3 +77,13 @@ function resulta() {
     document.querySelector(".calculateur__reponce--texte").textContent = texte;
     console.log(df);
 }
+
+
+// equilibre nationale
+
+const number = document.querySelector('.menu__valeur');
+
+setInterval(function(){
+    var aleatoir = (Math.random() * (99 - 80)+ 80).toFixed(1);
+    document.querySelector(".menu__valeur").textContent = aleatoir + "%";
+  }, 2000);
