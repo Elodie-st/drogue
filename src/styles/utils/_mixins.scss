@@ -20,26 +20,33 @@
 @mixin titre--h2{
     font-family: "Plus Jakarta Sans", sans-serif;
     color: $c-noir;
-    font-size:clamp(#{$size-xl-tel}, 1.333vw + 26px, #{$size-sousTitre-pc});
+    font-size:clamp(#{$size-xl-tel}, 3.594vw + 15.062px, #{$size-sousTitre-pc});
 }
 
 @mixin titre--h3(){
     text-transform: uppercase;
     font-family: "Space Grotesk", sans-serif;
     color: $c-noir;
-    font-size: $size-m-tel;
+    font-size: clamp(#{$size-text-tel}, 1.333vw + 8px, #{$size-text-pc});
     margin: 0;
 }
 //btn
 @mixin btn--base{
     display: inline-block;
-    padding: $size-m-tel;
-    font-size: $size-text-tel;
+    padding: clamp(#{$size-m-tel}, 0.781vw + 16.188px, #{$size-m-pc});
+    font-size: clamp(#{$size-text-tel}, 1.333vw + 8px, #{$size-text-pc});
     font-family: "Space Grotesk", sans-serif;
     border-radius: $size-xl-tel;
     border: none;
-    margin: $size-l-tel 0px;
+    margin: clamp(#{$size-l-tel}, 0.938vw + 19.625px, #{$size-l-pc}) 0px;
     text-decoration: none;
+    
+    @media (min-width: 600px) {
+        border-radius: $size-1medium-tab;
+    }
+    @media (min-width: 900px) {
+        border-radius: $size-1medium-pc;
+    }
 }
 
 @mixin btn--primary{

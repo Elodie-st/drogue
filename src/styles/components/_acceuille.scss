@@ -5,7 +5,7 @@
     overflow: hidden;
     &__conteneur{
         position: relative;
-        margin: 132px  0px 49px 0px;
+        margin: clamp(132px, 2.879vw + 122.212px, 151px) 0px clamp($size-titre-tel, 0.303vw + 47.97px, $size-sousTitre-pc) 0px; 
         z-index: 2;
     }
 }
@@ -36,7 +36,7 @@
 
 .intro__titre{
     color: $c-with;
-    font-size: $size-titre-tel;
+    font-size: clamp($size-titre-tel, 11.364vw - 4.636px, $size-titre-pc);
     font-family: "Plus Jakarta Sans", sans-serif;
     .intro__titreAccent{
         color: $c-with;
@@ -70,10 +70,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: $size-l-tel;
+    margin-top: clamp(#{$size-l-tel}, 0.938vw + 19.625px, #{$size-l-pc});
+    .btn__click{
+        margin-top: 0px;
+    }
     @media (min-width: 700px){
         flex-direction: row;
-        gap: $size-s-tab;
+        gap: clamp(#{$size-s-tab}, 0.5vw + 12px, #{$size-s-pc});
     }
 }
 
@@ -81,9 +84,9 @@
 
 .cadreInfo__contenu {
     border: 1px solid $c-text;
-    border-radius: $size-m-tel;
-    margin-top: $size-medium-tel;
-    padding: $size-l-tel;
+    border-radius: clamp(#{$size-m-tel}, 0.758vw + 16.424px, #{$size-m-pc});
+    margin-top: clamp(#{$size-medium-tel}, 3.182vw + 30.182px, #{$size-1medium-pc});
+    padding: clamp(#{$size-l-tel} , 0.455vw + 21.455px, #{$size-l-pc});
 }
 .cadreInfo__img {
     width: 100%;
@@ -92,7 +95,7 @@
     img{
         width: 100%;
         height: 100%;
-        object-fit: cover;//
+        object-fit: cover;// mettre tout l'image pour sont contenu
     }
     video {
         display: block;
@@ -108,11 +111,11 @@
 .cadreInfo__header {
     display: flex;
     align-items: center;
-    gap: $size-s-tel;
-    margin-bottom: $size-m-tel;
+    gap: clamp(#{$size-s-tel}, 0.152vw + 12.485px, #{$size-xs-pc});
+    margin-bottom: clamp(#{$size-m-tel}, 0.758vw + 16.424px, #{$size-m-pc});
     i{ 
         color: $c-mauve;
-        font-size: $size-m-tel;
+        font-size: clamp(#{$size-m-tel}, 0.758vw + 16.424px, #{$size-m-pc});
     }
 }
 
@@ -121,18 +124,30 @@
 
 .flashCard{
     width: 100%;
-    padding-top: $size-medium-tel;
+    padding-top: clamp(#{$size-medium-tel}, 3.182vw + 30.182px, #{$size-1medium-pc});
     
 }
 .flashCard__conteneur{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: $size-l-tel;
+    gap: clamp(#{$size-l-tel}, 3.462vw + 11.231px, #{$size-xl-tab});
+    @media (min-width: 600px) {
+        align-items: center;
+        justify-content: center;
+    }
+    @media (min-width: 950px) {
+        flex-direction: row;
+        gap: $size-text-pc;
+    }
 }
 .flashCard__carte{
     width: 100%;
     height: 360px;
+    @media (min-width: 600px) {
+        width: 80%;
+        height: 260px;
+    }
 }
 .flashCard__inner{
     width: 100%;
@@ -153,7 +168,7 @@
     height: 100%;
     backface-visibility: hidden;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: clamp(#{$size-text-tel}, 1.333vw + 8px, #{$size-text-pc});
     box-shadow: 0 3px 18px 3px rgba($color: #000000, $alpha: 0.2);
     background-color: $c-rose;
 }
@@ -162,12 +177,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 28px;
-    height: 300px;
+    padding: 28px;//
+    height: 300px;//
     
     h3{
         color: $c-noir;
-        font-size: 28px;
+        font-size: 28px;//
         font-family: "Plus Jakarta Sans", sans-serif;
         text-transform: none;
     }
@@ -178,8 +193,8 @@
     align-items: center;
     justify-content: center;
     transform: rotateY(180deg);
-    padding: $size-text-tel;
-    height: 324px;
+    padding: $size-text-tel;//
+    height: 324px;//
 }
 .flashCard__content{
     width: 100%;
@@ -188,7 +203,7 @@
     position: relative;
     h3{
         color: $c-noir;
-        font-size: 23px;
+        font-size: 23px;//
         font-family: "Plus Jakarta Sans", sans-serif;
     }
 }
