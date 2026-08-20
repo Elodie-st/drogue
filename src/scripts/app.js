@@ -12,15 +12,23 @@ const menuToggle = document.querySelector(".menu__toggle");
 const menu = document.querySelector(".menu");
 const menuLinks = document.querySelectorAll(".menu__link");
 
-if(menuToggle){
-    // click sur le bouton
-    menuToggle.addEventListener("click", menuOpen);
+if (window.innerWidth <= 950) {
+    if(menuToggle){
+        // click sur le bouton
+        menu.addEventListener("click", ()=>{
+            menu.classList.toggle("menu--open")
+        });
+    
+        // click sur les liens 
+        for(let menuLink of menuLinks){
+            menuLink.addEventListener("click",() =>{
+                menu.classList.remove("menu--open")
+            } );
+        }
 
-    // click sur les liens 
-    for(let menuLink of menuLinks){
-        menuLink.addEventListener("click", menuOpen);
     }
 }
+
 // function pour ouvrir et fermer le menu
 function menuOpen(){
     menu.classList.toggle("menu--open");
@@ -87,3 +95,4 @@ setInterval(function(){
     var aleatoir = (Math.random() * (99 - 80)+ 80).toFixed(1);
     document.querySelector(".menu__valeur").textContent = aleatoir + "%";
   }, 2000);
+
