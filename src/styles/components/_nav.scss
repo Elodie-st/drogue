@@ -1,5 +1,5 @@
 
-@media (max-width: 1000px){
+
     .menu{
         position: fixed;
         top: 0;
@@ -15,7 +15,7 @@
         border: 2px solid $c-with;
         .menu__liste{
             position: fixed;
-            top: 100%; 
+            top: 6em; 
             left: 15%;
             width: 70%;
             box-sizing: border-box;
@@ -24,6 +24,17 @@
             margin: 0;
             z-index: 30;
             display: none;
+            @media (min-width: 950px) {
+                position: static;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 $size-s-pc;
+                padding: 0;
+                .menu__el:first-child{
+                    border-left: 2px solid $c-text;
+                }
+            }
         } 
         .menu__liste::before{
             content: '';
@@ -39,41 +50,43 @@
             @media (min-width: 600px) {
                 transform: translate(-40%);
             }
+            @media (min-width: 950px) {
+                display: none;
+            }
         }
     }
     .menu__toggle{
         width: $size-hauteur-tel;
         height: $size-hauteur-tel;
         display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
         z-index: 20;
         background-color: $c-lila;
-        border-radius: $size-sousTitre-tel;
-        padding: $size-text-tel;
+        border-radius: $size-sousTitre-tel; 
         border: none;
-        flex-direction: column;
-        justify-content: space-between;
         @media (min-width: 600px) {
             width: $size-1medium-tab;
             height: $size-1medium-tab;
             border-radius: $size-xxl-tab;
-            padding: $size-text-tab;
         }
-    }
-    .menu__toggle span {
-        height: 4px;
-        background-color: $c-mauve;
-        border-radius: 3px;
-        display: block;
+        @media (min-width: 950px) {
+            display: none;
+        }
     }
 
     .menu--open .menu__liste{
         display: block;
         background-color: $c-lila;
         z-index: 30;
+        @media (min-width: 950px) {
+            display: none;
+        }
     }
     .menu__titreProtocol, .menu__titrindic{
-        font-size: clamp(16px, 7.5vw - 11px, 19px);
+        font-size: clamp(13px, 0.789vw + 10.316px, 19px);
+
     }
     .menu__titreProtocol{
         &--long{
@@ -92,15 +105,25 @@
     .menu__el{
         list-style: none;
         margin: clamp(#{$size-text-tel}, 0.769vw + 13.385px,#{$size-text-tab});
+        @media (min-width: 950px) {
+            margin: 0;
+            padding: 0 5px;
+            border-right: 2px solid $c-text;
+
+        }
     }
     .menu__link{
         font-size: clamp(#{$size-l-tel}, 1.154vw + 19.077px,#{$size-l-tab});
         text-decoration: none;
         color: $c-mauve;
+        @media (min-width: 950px) {
+            font-size: $size-text-pc;
+        }
     } 
     .menu__logo{
         display: flex;
         flex-direction: row;
+        align-items: center;
         gap: clamp(#{$size-s-tel}, 1.061vw + 9.394px,#{$size-text-pc});
     }
     .menu__ico{
@@ -110,6 +133,7 @@
     .menu__indicateur{
         display: flex;
         flex-direction: row;
+        align-items: center;
         gap: clamp(#{$size-s-tel}, 1.061vw + 9.394px,#{$size-text-pc});
         .menu__titrindic{
             width: 5em;
@@ -125,4 +149,3 @@
             margin: 0;
         }
     }
-}

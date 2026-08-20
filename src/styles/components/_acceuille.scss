@@ -122,22 +122,25 @@
 
 //flashcard
 
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
 .flashCard{
     width: 100%;
     padding-top: clamp(#{$size-medium-tel}, 3.182vw + 30.182px, #{$size-1medium-pc});
-    
+    padding-bottom: clamp(#{$size-medium-tel}, 3.182vw + 30.182px, #{$size-1medium-pc});
 }
 .flashCard__conteneur{
+    @include conteneur();
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: clamp(#{$size-l-tel}, 3.462vw + 11.231px, #{$size-xl-tab});
-    @media (min-width: 600px) {
-        align-items: center;
-        justify-content: center;
-    }
     @media (min-width: 950px) {
         flex-direction: row;
+        align-items: stretch; //pour s'adapter aux conteneur
+        justify-content: center;
         gap: $size-text-pc;
     }
 }
@@ -146,7 +149,11 @@
     height: 360px;
     @media (min-width: 600px) {
         width: 80%;
-        height: 260px;
+        height: 300px;
+    }
+    @media (min-width: 950px) {
+        width: 30%;
+        height: 340px;
     }
 }
 .flashCard__inner{
@@ -164,7 +171,7 @@
 }
 .flashCard__face{
     position: absolute;
-    width: auto;
+    width: 100%;
     height: 100%;
     backface-visibility: hidden;
     overflow: hidden;
@@ -177,14 +184,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 28px;//
-    height: 300px;//
+    padding: clamp(#{$size-xl-tel}, 0.152vw + 27.485px, #{$size-l-pc});
     
     h3{
         color: $c-noir;
-        font-size: 28px;//
+        font-size: clamp(#{$size-xl-tel}, 0.152vw + 27.485px, #{$size-l-pc});
         font-family: "Plus Jakarta Sans", sans-serif;
         text-transform: none;
+        @media (min-width: 950px) {
+            font-size: $size-m-pc;
+        }
     }
 }
 
@@ -193,8 +202,7 @@
     align-items: center;
     justify-content: center;
     transform: rotateY(180deg);
-    padding: $size-text-tel;//
-    height: 324px;//
+    padding: clamp(#{$size-text-tel}, 0.667vw + 12px, #{$size-text-pc});
 }
 .flashCard__content{
     width: 100%;
@@ -203,7 +211,7 @@
     position: relative;
     h3{
         color: $c-noir;
-        font-size: 23px;//
+        font-size: clamp(#{$size-l-tel}, 0.909vw + 19.909px, #{$size-l-pc});//
         font-family: "Plus Jakarta Sans", sans-serif;
     }
 }
