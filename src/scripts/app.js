@@ -108,3 +108,39 @@ setInterval(function(){
     document.querySelector(".menu__valeur").textContent = aleatoir + "%";
   }, 2000);
 
+//oeil
+
+const eyeball = document.querySelector(".oeil__pupille");
+const boutons = document.querySelectorAll(".group__link");
+
+//si pas if eyball ereur sur les autre page
+if (eyeball) {
+    //ordi
+document.onmousemove = () => {
+    const x = event.clientX * 100/ window.innerWidth + "%";
+    const y = event.clientY * 100/ window.innerWidth + "%";
+
+    eyeball.style.left = x;
+    eyeball.style.top = y;  
+}
+
+document.addEventListener ("touchmove", (event) => {
+    const touch = event.touches[0]; //si un doigt sur l'ecrant
+
+    const x = touch.clientX * 100/ window.innerWidth + "%";
+    const y = touch.clientY * 100/ window.innerWidth + "%";
+
+    eyeball.style.left = x;
+    eyeball.style.top = y;  
+});
+
+boutons.forEach((bouton) => {
+    bouton.addEventListener ("mouseover", () =>{
+        eyeball.classList.add("oeil__pupille--zom");
+    });
+
+    bouton.addEventListener ("mouseleave", () =>{
+        eyeball.classList.remove("oeil__pupille--zom");
+    });
+});
+}

@@ -76,31 +76,6 @@
 
 //oeil
 /*
-.oeil{
-    position: relative;
-    width: 50vw;
-    height: 50vw;
-    background-color: $c-with;
-    border-radius: 50%;
-    border: 2px solid $c-gridmauve;
-}
-.oeil__iris{
-    position: relative;
-    width: 30vw;
-    height: 30vw;
-    border-radius: 50%;
-    background-color: $c-mauve;
-}
-
-
-.oeil__pupille{
-    position: relative;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: $c-noir;
-}
-*/
 @keyframes scrollOeuil {
     from{
         transform: translateY(0);
@@ -109,15 +84,16 @@
         transform: translateY(calc(30vh - 100px));
     }
 }
+*/
 .oeil{
-    position: relative;
+   // position: relative;
     top: 50%;
     //transform: rotateY(-50%);
     width: 100%;
     text-align: center;
 }
 
-.oeil__iris{
+.oeil__rond{
     width: 50vw;
     height: 50vw;
     background-color: $c-with;
@@ -126,19 +102,42 @@
     display: inline-block;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+    @media (min-width: 600px) {
+        width: 30vw;
+        height: 30vw;
+    }
+    @media (min-width: 950px) {
+        width: 20vw;
+        height: 20vw;
+    }
 }
 
 .oeil__pupille{
-    position: absolute;
-    top: 0;
-    left: 25%;
     width: 70px;
     height: 70px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+   // transform: translateX(-50%);
     border-radius: 50%;
     background-color: $c-noir;
     border: 15px solid $c-mauve;
-    animation: scrollOeuil linear;
-    animation-timeline: scroll(root block);
+   // animation: scrollOeuil linear;
+   // animation-timeline: scroll(root block);
+    &--zom{
+        transform: scale(1.2);
+    }
+   @media (min-width: 600px) {
+    width: 150px;
+    height: 150px;
+    border: 30px solid $c-mauve;
+    }
+    @media (min-width: 950px) {
+        width: 100px;
+        height: 100px;
+        border: 20px solid $c-mauve;
+    }
 }
 
 
