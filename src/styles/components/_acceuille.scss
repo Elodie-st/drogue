@@ -38,10 +38,14 @@
     color: $c-with;
     font-size: clamp($size-titre-tel, 11.364vw - 4.636px, $size-titre-pc);
     font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 1;
     .intro__titreAccent{
         color: $c-with;
         text-shadow: $c-mauve 1px 1px 20px;
     }
+}
+.intro__titre--noir{
+    @include titre--h2();
 }
 .intro__text{
     color: $c-with;

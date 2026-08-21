@@ -16,7 +16,13 @@
 .altern__header{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: $size-s-tel;
+}
+.altern__img{
+    width: clamp(#{$size-medium-tel}, 3.182vw + 30.182px, #{$size-1medium-pc});
+    height: clamp(#{$size-medium-tel}, 3.182vw + 30.182px, #{$size-1medium-pc});
+    border-radius: clamp(#{$size-medium-tel}, 3.182vw + 30.182px, #{$size-1medium-pc});
 }
 @media (min-width: 1000px){
     .altern__el{
@@ -36,3 +42,4 @@
         flex-direction: column;
     }
 }
+
