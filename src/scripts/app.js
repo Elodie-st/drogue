@@ -72,10 +72,11 @@ const reponce = document.querySelector('.calculateur__reponce--titre');
 const texte = document.querySelector('.calculateur__reponce--texte');
 
 
-if(btnCalcul){
-    // click sur le bouton
-    btnCalcul.addEventListener("click", resulta);
-}
+    if(btnCalcul){
+        // click sur le bouton
+        btnCalcul.addEventListener("click", resulta);
+    }
+
 //fonction pour le calcule
 function resulta() {
     //variable dans la fonction pour mettre .value a la fin
@@ -83,6 +84,13 @@ function resulta() {
     var poids = document.getElementById('poids').value;
     var taille = document.getElementById('taille').value;
     var heures = document.getElementById('heures').value;
+
+    if (!poids || !taille || !heures || !substence[drogue]) {
+        btnCalcul.style.backgroundColor = "red";
+        return;
+    } else {
+        btnCalcul.style.backgroundColor = "";
+    }
 
     //on reprens la dose et le rmax dans substense en reprene l'input drogue ( la reponce utilisateur)
     const { dose, rmax, texte } = substence[drogue];
