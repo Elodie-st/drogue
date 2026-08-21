@@ -11,11 +11,12 @@ document.querySelectorAll('.flashCard__carte').forEach(carte => {
 const menuToggle = document.querySelector(".menu__toggle");
 const menu = document.querySelector(".menu");
 const menuLinks = document.querySelectorAll(".menu__link");
+const menuListe = document.querySelector('.menu__liste');
 
 if (window.innerWidth <= 950) {
     if(menuToggle){
         // click sur le bouton
-        menu.addEventListener("click", ()=>{
+        menuToggle.addEventListener("click", ()=>{
             menu.classList.toggle("menu--open")
         });
     
@@ -28,6 +29,17 @@ if (window.innerWidth <= 950) {
 
     }
 }
+//si on ne sort pas du if aux desu il ne marche pas aux desu de 950 px
+for (let menuLink of menuLinks) {
+    const lien = new URL(menuLink.href).pathname;
+    const chemain = window.location.pathname;
+
+    if ( lien === chemain) {
+        menuLink.classList.add("active")
+    }
+}
+
+
 
 // function pour ouvrir et fermer le menu
 function menuOpen(){

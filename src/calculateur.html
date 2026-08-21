@@ -39,9 +39,11 @@
 
       <nav class="menu">
         <div class="menu__logo">
-          <img class="menu__ico" src="assets/images/nav_ico.svg" alt="icone filo grame, clickable pour remonter en haut du site web">
-          <h3 class="menu__titreProtocol menu__titreProtocol--court">Protocol</h3>
-          <h3 class="menu__titreProtocol menu__titreProtocol--long">Equilibrum·Protocol</h3>
+          <a  class="menu__link" href="index.html#intro">
+            <img class="menu__ico" src="assets/images/nav_ico.svg" alt="icone filo grame, clickable pour remonter en haut du site web">
+            <h3 class="menu__titreProtocol menu__titreProtocol--court">Protocol</h3>
+            <h3 class="menu__titreProtocol menu__titreProtocol--long">Equilibrum·Protocol</h3>
+          </a>
         </div>
         <button class="menu__toggle">
           <img class="menu__burgeur" src="assets/images/burger.svg" alt="burger menu click"> 
@@ -59,27 +61,30 @@
         </div>
     </nav>  
 
-    <div class="intro__conteneur">
-      <p class="intro__surTitre">L’opti-dopage</p>
-      <h1 class="intro__titre"><span class="intro__titreAccent">Maîtriser sa Dose</h1>
-      <div class="btn">
-        <button class="btn__click btn__click--primary">Calculateur  ↓</button>
-        <button class="btn__click btn__click--light">Votre psycoactif</button>
+    <div class="intro__conteneur grille">
+      <div class="intro__grille grille__1--3">
+        <p class="intro__surTitre">L’opti-dopage</p>
+        <h1 class="intro__titre"><span class="intro__titreAccent">Maîtriser sa Dose</h1>
+        <div class="btn">
+          <a href="#calculateur"><button class="btn__click btn__click--primary">Calculateur &#8595</button></a>
+          <a href="#drogue"><button class="btn__click btn__click--light">Votre psycoactif</button></a>
+        </div>
       </div>
     </div>
   </header>
 
-  <section class="loi">
-    <div class="loi__conteneur">
-      <p class="loi__surTitre">La fin des effets secondaires</p>
+  <section class="article grille">
+    <div class="article__conteneur grille__1--3">
+      <p class="article__surTitre">La fin des effets secondaires</p>
       <h2>Effet recherché, choix adapté !</h2>
       <p>Depuis l’apparition des psychoactifs de synthèse, les effets secondaires indésirables sont parfaitement maîtrisés. Chaque substance peut désormais être utilisée de manière précise à condition de respecter strictement la dose recommandée et d’éviter toute association avec des drogues sauvages.</p>
+    </div>
   </section>
 
-  <section class="categories">
-    <div class="categories__conteneur">
+  <section id="drogue" class="categories">
+    <div class="categories__conteneur grille">
 
-      <div class="groupe groupe--fitst">
+      <div class="groupe groupe--fitst grille__1--2">
         <div class="groupe__header">
           <img class="groupe__icone" src="assets/images/force.svg" alt="icone de la force">
           <h3 class="groupe__titre">Performance physique</h3>
@@ -87,13 +92,13 @@
       
         <p class="groupe__texte">Amélioration de l’endurance et développement musculaire. Un atout pour les sportifs de tous niveaux.</p>
         <div class="groupe__btn">
-          <a class="group__link group__link--rose" href="">D-bol</a>
-          <a class="group__link group__link--rose" href="">Amphétamine</a>
-          <a class="group__link group__link--rose" href="">EPO (érythropoiétine)</a>     
+          <a href="alternative.html#d_bol"><button class="group__link group__link--rose">D-bol</button></a>
+          <a href="alternative.html#amphetamine"><button class="group__link group__link--rose">Amphétamine</button></a>
+          <a href="alternative.html#epo"><button class="group__link group__link--rose">EPO (érythropoiétine)</button></a>     
         </div>
       </div>
 
-      <div class="groupe groupe--second">
+      <div class="groupe groupe--second grille__3--5">
         <div class="groupe__header">
           <img class="groupe__icone" src="/assets/images/peincaux.svg" alt="icone pincaux">
           <h3 class="groupe__titre">Creativite</h3>
@@ -101,10 +106,10 @@
       
         <p class="groupe__texte">Libération de l’imagination et perception élargie. Une nouvelle dimension pour les artistes, et les inventeurs</p>
         <div class="groupe__btn">
-          <a class="group__link group__link--bleu" href="">LSD</a>
-          <a class="group__link group__link--bleu" href="">THC</a>
-          <a class="group__link group__link--bleu" href="">Ecstasy</a>  
-          <a class="group__link group__link--bleu" href="">Cocaïne</a>     
+          <a href="alternative.html#lsd"><button class="group__link group__link--bleu">LSD</button></a>
+          <a href="alternative.html#thc"><button class="group__link group__link--bleu">THC</button></a>
+          <a href="alternative.html#mdma"><button class="group__link group__link--bleu">Ecstasy</button></a>  
+          <a href="alternative.html#cocaine"><button class="group__link group__link--bleu">Cocaïne</button></a>     
         </div>
       </div>
 
@@ -114,7 +119,7 @@
         </div>
       </div>
 
-      <div class="groupe groupe--tierce">
+      <div class="groupe groupe--tierce grille__1--2">
         <div class="groupe__header">
           <img class="groupe__icone" src="assets/images/lunette.svg" alt="icone de lunette">
           <h3 class="groupe__titre">Performance intellectuelle</h3>
@@ -122,14 +127,14 @@
       
         <p class="groupe__texte">Optimisation de la concentration accrue et mémoire renforcée. Un atout majeur pour les étudiants.</p>
         <div class="groupe__btn">
-          <a class="group__link group__link--lila" href="">Modafinil</a>
-          <a class="group__link group__link--lila" href="">Ritaline</a>
-          <a class="group__link group__link--lila" href="">Nicotine</a>     
-          <a class="group__link group__link--lila" href="">Caféine</a> 
+          <a href="alternative.html#modafinil"><button class="group__link group__link--lila">Modafinil</button></a>
+          <a href="alternative.html#ritaline"><button class="group__link group__link--lila">Ritaline</button></a>
+          <a href="alternative.html#nicotine"><button class="group__link group__link--lila">Nicotine</button></a>     
+          <a href="alternative.html#cafeine"><button class="group__link group__link--lila">Caféine</button></a> 
         </div>
       </div>
 
-      <div class="groupe groupe--quatre">
+      <div class="groupe groupe--quatre grille__3--5">
         <div class="groupe__header">
           <img class="groupe__icone" src="assets/images/bonheur.svg" alt="icone du bonheur">
           <h3 class="groupe__titre">Bonheur</h3>
@@ -137,10 +142,10 @@
     
         <p class="groupe__texte">Bien-être, sérénité et équilibre émotionnel renforcés, pour un épanouissement personnel accru.</p>
         <div class="groupe__btn">
-          <a class="group__link group__link--vert" href="">CBD</a>
-          <a class="group__link group__link--vert" href="">Sucre</a>
-          <a class="group__link group__link--vert" href="">Viagra</a>     
-          <a class="group__link group__link--vert" href="">Alcool</a> 
+          <a href="alternative.html#cbd"><button class="group__link group__link--vert">CBD</button></a>
+          <a href="alternative.html#viadra"><button class="group__link group__link--vert">Sucre</button></a>
+          <a href="alternative.html#sucre"><button class="group__link group__link--vert">Viagra</button></a>     
+          <a href="alternative.html#alcool"><button class="group__link group__link--vert">Alcool</button></a> 
         </div>
       </div>
 
@@ -148,11 +153,13 @@
   </section>
 
   <section id="calculateur" class="calculateur">
-    <div class="calculateur__conteneur">
-      <p class="calculateur__surTitre">Données et mesures</p>
-      <h2>Calculateur de dose</h2>
+    <div class="calculateur__conteneur grille">
+      <div class="calculateur__grille grille__1--3">
+        <p class="calculateur__surTitre">Données et mesures</p>
+        <h2>Calculateur de dose</h2>
+      </div>
 
-      <div class="calculateur__calcule">
+      <div class="calculateur__calcule grille__1--2">
         <div class="calculateur__donner">
           <label class="calculateur__TitreDonner">Substance</label>
           <select class="calculateur__input" name="drogue" id="drogue-select" value="">
@@ -202,7 +209,7 @@
           </div>
         </div>
       </div>
-      <div class="calculateur__reponce">
+      <div class="calculateur__reponce grille__3--5">
         <h3 class="calculateur__reponce calculateur__reponce--titre">Dose Recommandée</h3>
         <p class="calculateur__reponce calculateur__reponce--texte">À titre indicatif uniquement. Déconseillé aux mineurs, femmes enceintes et personnes souffrant de troubles cardiaques, rénaux ou hépatiques. Demandez conseil à un médecin.</p>
         <button class="btn__click btn__click--primary btn__click--calcule">Calculer</button>
@@ -210,13 +217,15 @@
     </div>
   </section>
 
-  <section class="loi">
+  <section id="temoignage__calculateur" class="article">
 
-    <div class="loi__conteneur">
-      <p class="loi__surTitre">Lire aussi :</p>
-      <h2>Témoignage</h2>
+    <div class="article__conteneur grille">
+      <div class="article__grid grille__1--3">
+        <p class="article__surTitre">Lire aussi :</p>
+        <h2>Témoignage</h2>
+      </div>
 
-        <div class="cadreInfo__contenu">
+        <div class="cadreInfo__contenu grille__1--2">
           <div class="cadreInfo__header">
             <i class="fa-regular fa-circle-question"></i>
             <h3>La Caféine</h3>
@@ -226,7 +235,7 @@
           <p class="cadreInfo__name">- Helder, étudient infographie</p>
         </div>
 
-        <div class="cadreInfo__contenu">
+        <div class="cadreInfo__contenu grille__3--5">
           <div class="cadreInfo__header">
             <i class="fa-regular fa-circle-question"></i>
             <h3>LSD et créativité</h3>
@@ -235,15 +244,15 @@
           <p>« Je pensais que plus d’expériences signifiait forcément plus de créativité. J’ai compris qu’il fallait aussi laisser de la place à mon propre esprit. En diminuant, j’ai retrouvé une forme de liberté que je croyais avoir perdue. »</p>
           <p class="cadreInfo__name">- Luca, étudiant en option artistique</p>
         </div>
-        <button class="btn__click btn__click--dark">Lire d’autre temoigange →︎</button>
+        <a href="histoir.html#temoignage__histoir"><button class="btn__click btn__click--dark">Lire d’autre temoigange &#8594;&#65038;</button></a>
       </div>
     </div>
   </section>
-  <footer class="footer">
-    <div class="footer__conteneur">
+  <footer class="footer grille">
+    <div class="footer__conteneur grille__1--3">
       <div class="footer__intro">
         <i></i>
-        <h3 class="loi__surTitre">EQUILIBRUM·PROTOCOL</h3>
+        <h3 class="article__surTitre">EQUILIBRUM·PROTOCOL</h3>
       </div>
 
       <nav class="footer__nav">
@@ -256,8 +265,8 @@
       </nav>
 
       <div class="btn">
-        <a class="btn__click btn__click--primary" href="">Crédit ↗</a>
-        <a class="btn__click btn__click--primary" href="">Castudy ↗</a>
+        <a class="btn__click btn__click--primary" href="">Crédit &#8599;&#65038</a>
+        <a class="btn__click btn__click--primary" href="">Castudy &#8599;&#65038</a>
       </div>
       
       <p class="footer__outro">ŒUVRE DE FICTION. Ce site présente un monde imaginaire de sensibilisation où les substances seraient légalisées et strictement régulées. Aucun produit, service ou conseil médical réel n'est proposé. © 2035 Département fictif de l'Équilibre.</p>

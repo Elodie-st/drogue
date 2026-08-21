@@ -54,10 +54,15 @@
     }
 }
 
-.loi, .economie{
+//article
+.article {
     &__surTitre{
         @include surTitre--style($c-mauve);
     }
+}
+
+.article__texteIntro--hauteur{
+    margin-bottom: clamp(#{$size-l-tel}, 0.938vw + 19.625px, #{$size-l-pc});
 }
 
 //btn
@@ -66,7 +71,7 @@
     &--dark { @include btn--dark();}
     &--light { @include btn--light();}
 }
-.loi__senat {
+.article__senat {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -80,18 +85,20 @@
     }
 }
 
-//section loi
+//cadreInfo
 
 .cadreInfo__contenu {
     border: 1px solid $c-text;
     border-radius: clamp(#{$size-m-tel}, 0.758vw + 16.424px, #{$size-m-pc});
     margin-top: clamp(#{$size-medium-tel}, 3.182vw + 30.182px, #{$size-1medium-pc});
     padding: clamp(#{$size-l-tel} , 0.455vw + 21.455px, #{$size-l-pc});
+    @media (min-width: 950px){
+        margin-top: 0;
+    }
 }
-.cadreInfo__img {
+.cadreInfo__img, .cadreInfo__video {
     width: 100%;
-    background-color: $c-lila;
-
+    //background-color: $c-lila; // manipe en js
     img{
         width: 100%;
         height: 100%;
@@ -105,6 +112,7 @@
     iframe {
         display: block;
         width: 100%;
+        height: 50%;
     }
 }
 
@@ -120,6 +128,7 @@
 }
 
 
+
 //flashcard
 
 *, *::before, *::after {
@@ -132,7 +141,7 @@
     padding-bottom: clamp(#{$size-medium-tel}, 3.182vw + 30.182px, #{$size-1medium-pc});
 }
 .flashCard__conteneur{
-    @include conteneur();
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,13 +180,25 @@
 }
 .flashCard__face{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    backface-visibility: hidden;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
-    overflow: hidden;
+    //overflow: hidden;
     border-radius: clamp(#{$size-text-tel}, 1.333vw + 8px, #{$size-text-pc});
     box-shadow: 0 3px 18px 3px rgba($color: #000000, $alpha: 0.2);
     background-color: $c-rose;
+    .menu__ico{
+        margin-top: clamp(#{$size-xl-tel}, 0.152vw + 27.485px, #{$size-l-pc});
+    }
+    &:hover{
+        transform: scale(0.9);
+    }
+    @media (min-width: 950px) {
+        width: 100%;
+        height: auto;
+    }
 }
 .flashCard__face--front{
     background-color: $c-rose;
@@ -185,6 +206,10 @@
     align-items: center;
     justify-content: center;
     padding: clamp(#{$size-xl-tel}, 0.152vw + 27.485px, #{$size-l-pc});
+    @media (min-width: 950px) {
+        width: 100%;
+        height: 100%;
+    }
     
     h3{
         color: $c-noir;
@@ -211,8 +236,11 @@
     position: relative;
     h3{
         color: $c-noir;
-        font-size: clamp(#{$size-l-tel}, 0.909vw + 19.909px, #{$size-l-pc});//
+        font-size: clamp(#{$size-l-tel}, 0.909vw + 19.909px, #{$size-l-pc});
         font-family: "Plus Jakarta Sans", sans-serif;
+        @media (min-width: 950px) {
+            font-size: $size-m-pc;
+        }
     }
 }
 .flashCard__body{
@@ -232,3 +260,4 @@
         background-color: $c-lila;
     }
 }
+

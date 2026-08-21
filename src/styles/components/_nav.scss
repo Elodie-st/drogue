@@ -106,26 +106,44 @@
     .menu__el{
         list-style: none;
         margin: clamp(#{$size-text-tel}, 0.769vw + 13.385px,#{$size-text-tab});
+        &:hover{
+            transform: translate( 6px, 0px );
+        }
         @media (min-width: 950px) {
             margin: 0;
-            padding: 0 5px;
+            padding: 0 clamp(5px, 7.5vw - 70px, 20px);
             border-right: 2px solid $c-text;
-
+            &:hover{
+                transform: translate( 0px, -6px );
+            }
+            &:active{
+                transform: translate( 0px, 0px );
+            }
         }
     }
     .menu__link{
         font-size: clamp(#{$size-l-tel}, 1.154vw + 19.077px,#{$size-l-tab});
         text-decoration: none;
         color: $c-mauve;
+        &:hover{
+            filter: brightness(1.2);
+        }
+        &.active{
+            text-shadow: $c-text 1px 1px 3px;
+        }
         @media (min-width: 950px) {
             font-size: $size-text-pc;
         }
     } 
     .menu__logo{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: clamp(#{$size-s-tel}, 1.061vw + 9.394px,#{$size-text-pc});
+
+        .menu__link{
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: clamp(#{$size-s-tel}, 1.061vw + 9.394px,#{$size-text-pc});
+        }
     }
     .menu__ico{
         width: clamp(#{$size-m-tel}, 2.879vw + 6.212px,#{$size-xl-pc});

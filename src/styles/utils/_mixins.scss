@@ -6,8 +6,8 @@
         padding-right: $size-xxl-tab;
     }
     @media (min-width: 900px) {
-        padding-left:  $size-l-pc;
-        padding-right: $size-l-pc;
+        padding-left:  $size-xl-pc;
+        padding-right: $size-xl-pc;
     }
   }
 // mixin pour avoir le meme style mais $color legerment different pour loi et economie
@@ -40,7 +40,15 @@
     border: none;
     margin: clamp(#{$size-l-tel}, 0.938vw + 19.625px, #{$size-l-pc}) 0px;
     text-decoration: none;
-    
+    &:hover{
+        transform: scale(1.04);
+        cursor: pointer;
+        filter: brightness(1.5);
+    }
+    &:active{
+        transform: scale(0.98);
+        filter: brightness(50%);
+    }
     @media (min-width: 600px) {
         border-radius: $size-1medium-tab;
     }

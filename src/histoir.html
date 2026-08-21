@@ -40,9 +40,11 @@
 
       <nav class="menu">
         <div class="menu__logo">
-          <img class="menu__ico" src="assets/images/nav_ico.svg" alt="icone filo grame, clickable pour remonter en haut du site web">
-          <h3 class="menu__titreProtocol menu__titreProtocol--court">Protocol</h3>
-          <h3 class="menu__titreProtocol menu__titreProtocol--long">Equilibrum·Protocol</h3>
+          <a class="menu__link" href="index.html#intro">
+            <img class="menu__ico" src="assets/images/nav_ico.svg" alt="icone filo grame, clickable pour remonter en haut du site web">
+            <h3 class="menu__titreProtocol menu__titreProtocol--court">Protocol</h3>
+            <h3 class="menu__titreProtocol menu__titreProtocol--long">Equilibrum·Protocol</h3>
+          </a>
         </div>
         <button class="menu__toggle">
           <img class="menu__burgeur" src="assets/images/burger.svg" alt="burger menu click"> 
@@ -61,40 +63,47 @@
     </nav>  
   </header>
 
-  <section class="loi">
-    <div class="loi__conteneur loi__conteneur--intro">
-      <p class="loi__surTitre">Science et vice</p>
-      <h2>Fin des drogues douces</h2>
-      <p>Article de science et vice ecrit dans le cadre du doctora en biochemistry de Louise T sur les derogue et leur usage dans la vie cotidienne </p>
-      <a class="btn__click btn__click--primary">Voire Science et vice ↗︎</a>
-      
+  <section id="Vice" class="article">
+    <div class="article__conteneur article__conteneur--intro grille">
+      <div class="article__grid grille__1--3">
+        <p class="article__surTitre">Science et vice</p>
+        <h2>Fin des drogues douces</h2>
+        <p>Article de science et vice ecrit dans le cadre du doctora en biochemistry de Louise T sur les derogue et leur usage dans la vie cotidienne </p>
+        <a href="http://www.elodiesomer.be/science-et-vice/" class="btn__click btn__click--primary">Voire Science et vice &#8599;&#65038</a>
+      </div>
 
-      <div class="cadreInfo">
-        <div class="cadreInfo__img">
+      <div class="cadreInfo grille">
+        <div class="cadreInfo__img grille__1--2">
           <img src="assets/images/img_science.png" srcset="assets/images/img_science.png 1x, assets/images/img_science@2x.png 2x" alt="image sur le texte de loi fictife sur les supstences psycoctife de la france ">
         </div>
-        <div class="cadreInfo__contenu">
-          <div class="cadreInfo__header">
-            <i class="fa-regular fa-circle-question"></i>
-            <h3>le savais tu ?</h3>
+
+        <div class="cadreInfo__section grille__3--5">
+          <div class="cadreInfo__contenu">
+            <div class="cadreInfo__header">
+              <i class="fa-regular fa-circle-question"></i>
+              <h3>le savais tu ?</h3>
+            </div>
+            <p>En 1976, Barry Kidston, un étudiant en chimie, essaye de synthétiser dans son garage de la Desmethylprodine. Il utilise pour aller plus vite une température trop élevée lors de l’estérification et produit MPTP. Dans le cerveau, le MPTP est transformé en neurotoxine qui détruit les neurones. Kidston développa alors brutalement une maladie de Parkinson.</p>
           </div>
-          <p>En 1976, Barry Kidston, un étudiant en chimie, essaye de synthétiser dans son garage de la Desmethylprodine. Il utilise pour aller plus vite une température trop élevée lors de l’estérification et produit MPTP. Dans le cerveau, le MPTP est transformé en neurotoxine qui détruit les neurones. Kidston développa alors brutalement une maladie de Parkinson.</p>
+          <a href="https://en.wikipedia.org/wiki/Desmethylprodine" class="btn__click btn__click--dark">Voir la Desméthylprodine &#8599;&#65038</a>
         </div>
-        <button class="btn__click btn__click--dark">Voir la Desméthylprodine ↗︎︎</button>
       </div>
     </div>
   </section>
 
-  <section class="flashCard">
-    <p class="loi__surTitre">Drogue dans l’histoir</p>
-    <h2>Quelles substances consommaient-ils ?</h2>
+  <section class="flashCard grille">
+    <div class="article__conteneur grille__1--3">
+      <p class="article__surTitre">Drogue dans l’histoir</p>
+      <h2>Quelles substances consommaient-ils ?</h2>
+    </div>
     <div class="flashCard__conteneur">
 
 
       <div class="flashCard__carte flashCard__carte--first">
         <div class="flashCard__inner">
           <div class="flashCard__face flashCard__face--front">
-            <h3>Que consommaient les Aztèques de Mésoamérique ? </h3>
+            <h3>Que consommaient les Aztèques de Mésoamérique ?</h3>
+            <img class="menu__ico" src="../assets/images/click_ico.svg" alt="clicker sur le flashcard">
           </div>
         
           <div class="flashCard__face flashCard__face--back">
@@ -111,7 +120,8 @@
       <div class="flashCard__carte flashCard__carte--second">
         <div class="flashCard__inner">
           <div class="flashCard__face flashCard__face--front">
-            <h3>Quelles substances prenaient les Sioux d’Amérique ? </h3>
+            <h3>Quelles substances prenaient les Sioux d’Amérique ?</h3>
+            <img class="menu__ico" src="../assets/images/click_ico.svg" alt="clicker sur le flashcard">
           </div>
         
           <div class="flashCard__face flashCard__face--back">
@@ -129,6 +139,7 @@
         <div class="flashCard__inner">
           <div class="flashCard__face flashCard__face--front">
             <h3>À quoi carburaient les Vikings du Danemark ?</h3>
+            <img class="menu__ico" src="../assets/images/click_ico.svg" alt="clicker sur le flashcard">
           </div>
         
           <div class="flashCard__face flashCard__face--back">
@@ -144,46 +155,52 @@
     </div>
   </section>
 
-  <section class="economie">
+  <section class="article grille">
 
-    <div class="loi__conteneur">
-      <p class="loi__surTitre">Comment ca marche</p>
-      <h2>Qu’est-ce qu’un Psychoactif ?</h2>
-      <p>Une étudiante en économie qui vous explique les tenants et aboutissants de l’influence de la loi DUP sur l'économie belge.</p>
+    <div class="article__conteneur">
+      <div class="article__grid grille__1--3">
+        <p class="article__surTitre">Comment ca marche</p>
+        <h2>Qu’est-ce qu’un Psychoactif ?</h2>
+      </div>
 
-      <div class="cadreInfo">
-        <div class="cadreInfo__img">
+      <div class="cadreInfo grille">
+        <div class="cadreInfo__img grille__1--2">
             <iframe  src="https://www.youtube.com/embed/LAZ4oEmc3lo?si=7gaV8k-CX5Lb7Vz9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
         </div>
-        <div class="cadreInfo__contenu">
-          <div class="cadreInfo__header">
-            <i class="fa-regular fa-circle-question"></i>
-            <h3>Résumé</h3>
+
+        <div class="cadreInfo__section grille__3--5">
+          <div class="cadreInfo__contenu">
+            <div class="cadreInfo__header">
+              <i class="fa-regular fa-circle-question"></i>
+              <h3>Résumé</h3>
+            </div>
+            <p>Maad Digital, média d’information scientifique, explique comment la cocaïne change le fonctionnement du cerveau. Elle empêche le cerveau de récupérer la dopamine et la sérotonine. Celles-ci stimulent alors fortement le système du plaisir : sentiment d'euphorie, plus d'énergie, forte envie d'agir et diminution de la fatigue. Lorsque les effets disparaissent, la personne peut ressentir de la tristesse, de l'anxiété et de l'irritabilité.</p>
           </div>
-          <p>Maad Digital, média d’information scientifique, explique comment la cocaïne change le fonctionnement du cerveau. Elle empêche le cerveau de récupérer la dopamine et la sérotonine. Celles-ci stimulent alors fortement le système du plaisir : sentiment d'euphorie, plus d'énergie, forte envie d'agir et diminution de la fatigue. Lorsque les effets disparaissent, la personne peut ressentir de la tristesse, de l'anxiété et de l'irritabilité.</p>
+          <a href="#cocaine"><button class="btn__click btn__click--dark">Témoignage d’un cocaïnomane &#8594;&#65038;</button></a>
         </div>
-        <button class="btn__click btn__click--dark">Témoignage d’un cocaïnomane →︎</button>
       </div>
     </div>
   </section>
 
-  <section class="loi">
+  <section id="temoignage__histoir" class="article">
 
-    <div class="loi__conteneur">
-      <p class="loi__surTitre">Lire aussi :</p>
-      <h2>Témoignage</h2>
+    <div id="cocaine" class="article__conteneur grille">
+      <div class="article__grid grille__1--3">
+        <p class="article__surTitre">Lire aussi :</p>
+        <h2>Témoignage</h2>
+      </div>
 
-        <div class="cadreInfo__contenu">
-          <div class="cadreInfo__header">
-            <i class="fa-regular fa-circle-question"></i>
-            <h3>Ça m’a tout coûté</h3>
-          </div>
-          <p class="cadreInfo__date">Publié le 18/02/2025  par Le Point</p>
-          <p>« Sébastien, cadre de 56 ans, raconte comment il est tombé dans le piège de cette drogue qui lui a fait perdre famille, amis et travail. Aujourd’hui sevré, il s’inquiète de la banalisation du produit. »</p>
-          <p class="cadreInfo__name">- Sébastien</p>
+      <div class="cadreInfo__contenu grille__1--2">
+        <div class="cadreInfo__header">
+          <i class="fa-regular fa-circle-question"></i>
+          <h3>Ça m’a tout coûté</h3>
         </div>
+        <p class="cadreInfo__date">Publié le 18/02/2025  par Le Point</p>
+        <p>« Sébastien, cadre de 56 ans, raconte comment il est tombé dans le piège de cette drogue qui lui a fait perdre famille, amis et travail. Aujourd’hui sevré, il s’inquiète de la banalisation du produit. »</p>
+        <p class="cadreInfo__name">- Sébastien</p>
+      </div>
 
-        <div class="cadreInfo__contenu">
+      <div class="cadreInfo__contenu grille__3--5">
           <div class="cadreInfo__header">
             <i class="fa-regular fa-circle-question"></i>
             <h3>Mois sans tabac</h3>
@@ -192,16 +209,15 @@
           <p>« Pierre a essayé 10 fois d'arrêter de fumer sans jamais y parvenir. Jusqu'à ce qu'il tombe très amoureux à 60 ans, et décide de faire attention à sa santé pour vivre pleinement sa nouvelle histoire. "La cigarette a accompagné 40 ans de ma vie, je ne renie pas tout le plaisir qu'elle m'a donné. Mais j'ai enfin arrêté de fumer il y a trois ans, et je n’éprouve ni manque, ni regret ! »</p>
           <p class="cadreInfo__name">- Pierre T</p>
         </div>
-        <button class="btn__click btn__click--dark">Lire d’autre temoigange →︎</button>
-      </div>
+        <a href="calculateur.html#temoignage__calculateur"><button class="btn__click btn__click--dark">Lire d’autre temoigange &#8594;&#65038;</button></a>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="footer__conteneur">
+  <footer class="footer grille">
+    <div class="footer__conteneur grille__1--3">
       <div class="footer__intro">
         <i></i>
-        <h3 class="loi__surTitre">EQUILIBRUM·PROTOCOL</h3>
+        <h3 class="article__surTitre">EQUILIBRUM·PROTOCOL</h3>
       </div>
 
       <nav class="footer__nav">
@@ -214,8 +230,8 @@
       </nav>
 
       <div class="footer__btnAll">
-        <a class="btn__click btn__click--primary" href="footer__btn">Crédit ↗</a>
-        <a class="btn__click btn__click--primary" href="footer__btn">Castudy ↗</a>
+        <a class="btn__click btn__click--primary" href="footer__btn">Crédit &#8599;&#65038</a>
+        <a class="btn__click btn__click--primary" href="footer__btn">Castudy &#8599;&#65038</a>
       </div>
       
       <p class="footer__outro">ŒUVRE DE FICTION. Ce site présente un monde imaginaire de sensibilisation où les substances seraient légalisées et strictement régulées. Aucun produit, service ou conseil médical réel n'est proposé. © 2035 Département fictif de l'Équilibre.</p>

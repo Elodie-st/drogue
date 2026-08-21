@@ -40,9 +40,11 @@
 
       <nav class="menu">
         <div class="menu__logo">
-          <img class="menu__ico" src="assets/images/nav_ico.svg" alt="icone filo grame, clickable pour remonter en haut du site web">
-          <h3 class="menu__titreProtocol menu__titreProtocol--court">Protocol</h3>
-          <h3 class="menu__titreProtocol menu__titreProtocol--long">Equilibrum·Protocol</h3>
+            <a class="menu__link" href="index.html#intro">
+                <img class="menu__ico" src="assets/images/nav_ico.svg" alt="icone filo grame, clickable pour remonter en haut du site web">
+                <h3 class="menu__titreProtocol menu__titreProtocol--court">Protocol</h3>
+                <h3 class="menu__titreProtocol menu__titreProtocol--long">Equilibrum·Protocol</h3>
+            </a>
         </div>
         <button class="menu__toggle">
             <img class="menu__burgeur" src="assets/images/burger.svg" alt="burger menu click"> 
@@ -61,145 +63,176 @@
     </nav>  
   </header>
 
-  <section class="loi">
-    <div class="loi__conteneur loi__conteneur--intro">
-      <p class="loi__surTitre">Naturopathie</p>
+  <section class="article grille">
+    <div class="article__conteneur article__conteneur--intro grille__1--3">
+      <p class="article__surTitre">Naturopathie</p>
       <h2>Alternatives naturelles</h2>
       <p>Avant la généralisation des molécules de synthèse — développées par les conglomérats pétroliers pour réorienter leurs dérivés dans un monde tout électrique — le végétal répondait déjà à nos besoins de performance et de stimulation. Cette cartographie met en parallèle chaque substance avec son équivalent naturel direct, privilégiant ainsi l'équilibre végétal.</p> 
+    </div>
   </section>
   <section class="altern">
     <div class="altern__contenu">
         <ul class="altern__liste">
-            <li class="altern__el">
-                <div class="altern__header">
-                    <h3 class="altern__drogue">LSD</h3>
-                    <h3 class="altern__plante">→ Ipomée grandiflora</h3>
-                </div>
-                <p class="altern__texte">Ses graines contiennent du LSA, aux effets psychoactifs <strong>similaires au LSD.</strong></p>
-                <a class="btn__click btn__click--primary" href="">Plantes hallucinogène ↗︎</a>
+            <li id="lsd" class="altern__el">
+                <div class="altern__page">
+                    <div class="altern__header ">
+                        <h3 class="altern__drogue">LSD</h3>
+                        <h3 class="altern__plante">&#8594;&#65038; Ipomée grandiflora</h3>
+                    </div>
+                    <p class="altern__texte">Ses graines contiennent du LSA, aux effets psychoactifs <strong>similaires au LSD.</strong></p>
+                </div>    
+                <a class="btn__click btn__click--primary" href="https://fr.jardineriaon.com/plantes-hallucinog%C3%A8nes.html">Plantes hallucinogène &#8599;&#65038</a>
             </li>
-            <li class="altern__el">
-                <div class="altern__header">
-                    <h3 class="altern__drogue">THC</h3>
-                    <h3 class="altern__plante">→ Laitue vireuse</h3>
+            <li id="thc" class="altern__el">
+                <div class="altern__page">
+                    <div class="altern__header">
+                        <h3 class="altern__drogue">THC</h3>
+                        <h3 class="altern__plante">&#8594;&#65038; Laitue vireuse</h3>
+                    </div>
+                    <p class="altern__texte">Les feuilles contiennent un suc laiteux renfermant des lactones associées à des<strong> effets calmants, sédatifs et analgésiques.</strong></p>
                 </div>
-                <p class="altern__texte">Les feuilles contiennent un suc laiteux renfermant des lactones associées à des<strong> effets calmants, sédatifs et analgésiques.</strong></p>
-                <a class="btn__click btn__click--primary" href="">THC de substitution ↗︎</a>
+                <a class="btn__click btn__click--primary" href="https://www.lechemindelanature.com/articles/a/video-la-laitue-vireuse-remplace-le-cannabis-et-lopium">THC de substitution &#8599;&#65038</a>
             </li>
-            <li class="altern__el">
-                <div class="altern__header">
-                    <h3 class="altern__drogue">MDMA</h3>
-                    <h3 class="altern__plante">→ Passiflore</h3>
+            <li id="mdma" class="altern__el">
+                <div class="altern__page">
+                    <div class="altern__header">
+                        <h3 class="altern__drogue">MDMA</h3>
+                        <h3 class="altern__plante">&#8594;&#65038; Passiflore</h3>
+                    </div>
+                    <p class="altern__texte">Ses fleurs contiennent des flavonoïdes, qui lui confèrent des <strong>propriétés calmantes, anxiolytiques et sédatives</strong>, favorisant la détente et le sommeil.</p>
                 </div>
-                <p class="altern__texte">Ses fleurs contiennent des flavonoïdes, qui lui confèrent des <strong>propriétés calmantes, anxiolytiques et sédatives</strong>, favorisant la détente et le sommeil.</p>
-                <a class="btn__click btn__click--primary" href="">Fleur de Passiflore ↗︎</a>
+                <a class="btn__click btn__click--primary" href="https://greenwellpath.com/blogs/sommeil-naturel/fleur-de-passiflore">Fleur de Passiflore &#8599;&#65038</a>
             </li>
-            <li class="altern__el">
-                <div class="altern__header">
-                    <h3 class="altern__drogue">Cocaïne</h3>
-                    <h3 class="altern__plante">→ Kola</h3>
+            <li id="cocaine" class="altern__el">
+                <div class="altern__page">
+                    <div class="altern__header">
+                        <h3 class="altern__drogue">Cocaïne</h3>
+                        <h3 class="altern__plante">&#8594;&#65038; Kola</h3>
+                    </div>
+                    <p class="altern__texte">Ses feuilles contiennent de la L-théanine qui est un acide-aminé psychoactifs<strong> favorisant la vigilance, la concentration et la détente.</strong></p>
                 </div>
-                <p class="altern__texte">Ses feuilles contiennent de la L-théanine qui est un acide-aminé psychoactifs<strong> favorisant la vigilance, la concentration et la détente.</strong></p>
-                <a class="btn__click btn__click--primary" href="">Noix de Kola ↗︎</a>
+                <a class="btn__click btn__click--primary" href="https://www.herboristerie-yannickbohbot.fr/blog/la-noix-de-kola-un-stimulant-naturel-pour-le-corps-et-l-esprit-n10">Noix de Kola &#8599;&#65038</a>
             </li>
-            <li class="altern__el">
-                <div class="altern__header">
-                    <h3 class="altern__drogue">Modafinil</h3>
-                    <h3 class="altern__plante">→ Thé vert</h3>
+            <li id="modafinil" class="altern__el">
+                <div class="altern__page">
+                    <div class="altern__header">
+                        <h3 class="altern__drogue">Modafinil</h3>
+                        <h3 class="altern__plante">&#8594;&#65038; Thé vert</h3>
+                    </div>
+                    <p class="altern__texte">Ses fleurs contiennent des flavonoïdes, qui lui confèrent des <strong>propriétés calmantes, anxiolytiques et sédatives</strong>, favorisant la détente et le sommeil.</p>
                 </div>
-                <p class="altern__texte">Ses fleurs contiennent des flavonoïdes, qui lui confèrent des <strong>propriétés calmantes, anxiolytiques et sédatives</strong>, favorisant la détente et le sommeil.</p>
-                <a class="btn__click btn__click--primary" href="">Le Thé: propriétés ↗︎</a>
+                <a class="btn__click btn__click--primary" href="https://www.pharma-gdd.com/fr/les-bienfaits-du-the-vert">Le Thé: propriétés &#8599;&#65038</a>
             </li>
-            <li class="altern__el">
-                <div class="altern__header">
-                    <h3 class="altern__drogue">Ritaline</h3>
-                    <h3 class="altern__plante">→ Ginkgo Biloba</h3>
+            <li id="ritaline" class="altern__el">
+                <div class="altern__page">
+                    <div class="altern__header">
+                        <h3 class="altern__drogue">Ritaline</h3>
+                        <h3 class="altern__plante">&#8594;&#65038; Ginkgo Biloba</h3>
+                    </div>
+                    <p class="altern__texte">Ses feuilles récoltées en automne contiennent des flavonoïdes associés au <strong>soutien des fonctions cognitives et de la circulation cérébrale.</strong></p>
                 </div>
-                <p class="altern__texte">Ses feuilles récoltées en automne contiennent des flavonoïdes associés au <strong>soutien des fonctions cognitives et de la circulation cérébrale.</strong></p>
-                <a class="btn__click btn__click--primary" href="">Bienfais du Ginkgo Biloba↗︎</a>
+                <a class="btn__click btn__click--primary" href="https://greenwellpath.com/blogs/fatigue-et-energie/ginkgo-biloba">Bienfais du Ginkgo Biloba &#8599;&#65038</a>
             </li>
-            <li class="altern__el">
-                <div class="altern__header">
-                    <h3 class="altern__drogue">Nicotine</h3>
-                    <h3 class="altern__plante">→ Maté</h3>
+            <li id="nicotine" class="altern__el">
+                <div class="altern__page">
+                    <div class="altern__header">
+                        <h3 class="altern__drogue">Nicotine</h3>
+                        <h3 class="altern__plante">&#8594;&#65038; Maté</h3>
+                    </div>
+                    <p class="altern__texte">Ses feuilles contiennent des polyphénols, des composés stimulants <strong>favorisant la vigilance, la concentration et la réduction de la fatigue.</strong></p>
                 </div>
-                <p class="altern__texte">Ses feuilles contiennent des polyphénols, des composés stimulants <strong>favorisant la vigilance, la concentration et la réduction de la fatigue.</strong></p>
-                <a class="btn__click btn__click--primary" href="">Préparer son maté ↗︎</a>
+                <a class="btn__click btn__click--primary" href="https://www.herboristerieduvalmont.com/mes-remedes-naturels/4862-mate-bienfaits-utilisations-et-contre-indications">Préparer son maté &#8599;&#65038</a>
             </li>
-            <li class="altern__el">
-                <div class="altern__header">
-                    <h3 class="altern__drogue">Caféine</h3>
-                    <h3 class="altern__plante">→ Bonjour</h3>
+            <li id="cafeine" class="altern__el">
+                <div class="altern__page">
+                    <div class="altern__header">
+                        <h3 class="altern__drogue">Caféine</h3>
+                        <h3 class="altern__plante">&#8594;&#65038; Bonjour</h3>
+                    </div>
+                    <p class="altern__texte">Boisson à base de ginseng dont la racine contient des ginsénosides aux effets tonifiants.<strong>Utilisée pour favoriser l’énergie et les performances cognitives.</strong></p>
                 </div>
-                <p class="altern__texte">Boisson à base de ginseng dont la racine contient des ginsénosides aux effets tonifiants.<strong>Utilisée pour favoriser l’énergie et les performances cognitives.</strong></p>
-                <a class="btn__click btn__click--primary" href="">Bonjour: Rituel Bien-être ↗︎</a>
+                <a class="btn__click btn__click--primary" href="https://bonjourdrink.co/">Bonjour: Rituel Bien-être &#8599;&#65038</a>
             </li>
-            <li class="altern__el">
-                <div class="altern__header">
-                    <h3 class="altern__drogue">D-bol</h3>
-                    <h3 class="altern__plante">→ GlycoBoost</h3>
+            <li id="d_bol" class="altern__el">
+                <div class="altern__page">
+                    <div class="altern__header">
+                        <h3 class="altern__drogue">D-bol</h3>
+                        <h3 class="altern__plante">&#8594;&#65038; GlycoBoost</h3>
+                    </div>
+                    <p class="altern__texte">elle permanent de libérer du glucose de manière constant <strong>ce qui fournit de l'énergie constamment</strong>, sans avoir de pique de fatigue</p>
                 </div>
-                <p class="altern__texte">elle permanent de libérer du glucose de manière constant <strong>ce qui fournit de l'énergie constamment</strong>, sans avoir de pique de fatigue</p>
-                <a class="btn__click btn__click--primary" href="">Contrôler sa glycémie ↗︎</a>
+                <a class="btn__click btn__click--primary" href="https://www.velo101.com/entrainements/sante/le-glucometre-lastuce-secrete-pour-optimiser-vos-entrainements-et-courses/">Contrôler sa glycémie &#8599;&#65038</a>
             </li>
-            <li class="altern__el">
-                <div class="altern__header">
-                    <h3 class="altern__drogue">EPO</h3>
-                    <h3 class="altern__plante">→ Altitude</h3>
+            <li id="epo" class="altern__el">
+                <div class="altern__page">
+                    <div class="altern__header">
+                        <h3 class="altern__drogue">EPO</h3>
+                        <h3 class="altern__plante">&#8594;&#65038; Altitude</h3>
+                    </div>
+                    <p class="altern__texte">Cela permet de fluidifier le sang et d'apporter plus d'oxygène à l'organisme, ce qui rend Cela permet de fluidifier le sang et d'apporter plus d'oxygène à l'organisme, ce qui rend <strong>plus éveillé et plus résistant à la douleur.</strong></p>
                 </div>
-                <p class="altern__texte">Cela permet de fluidifier le sang et d'apporter plus d'oxygène à l'organisme, ce qui rend Cela permet de fluidifier le sang et d'apporter plus d'oxygène à l'organisme, ce qui rend <strong>plus éveillé et plus résistant à la douleur.</strong></p>
-                <a class="btn__click btn__click--primary" href="">l'altitude fait des miracles ↗︎</a>
+                <a class="btn__click btn__click--primary" href="https://www.danslateteduncycliste.com/blog/altitude-cyclisme-corps-montagne-velo-changement-habitude">l'altitude fait des miracles &#8599;&#65038</a>
             </li>
-            <li class="altern__el">
-                <div class="altern__header">
-                    <h3 class="altern__drogue">Amphétamine</h3>
-                    <h3 class="altern__plante">→ Éphédra</h3>
+            <li id="amphetamine" class="altern__el">
+                <div class="altern__page">
+                    <div class="altern__header">
+                        <h3 class="altern__drogue">Amphétamine</h3>
+                        <h3 class="altern__plante">&#8594;&#65038; Éphédra</h3>
+                    </div>
+                    <p class="altern__texte">Ses tiges contiennent des alcaloïdes stimulants agissant sur le système nerveux et <strong>favorisant la vigilance, l’énergie et la réduction de la fatigue.</strong></p>
                 </div>
-                <p class="altern__texte">Ses tiges contiennent des alcaloïdes stimulants agissant sur le système nerveux et <strong>favorisant la vigilance, l’énergie et la réduction de la fatigue.</strong></p>
-                <a class="btn__click btn__click--primary" href="">Dopant naturel ↗︎</a>
+                <a class="btn__click btn__click--primary" href="https://saintesante.com/traitements/phytotherapie/plantes-psychotropes/ephedra">Dopant naturel &#8599;&#65038</a>
             </li>
-            <li class="altern__el">
-                <div class="altern__header">
-                    <h3 class="altern__drogue">CBD</h3>
-                    <h3 class="altern__plante">→ Cacao</h3>
+            <li id="cbd" class="altern__el">
+                <div class="altern__page">
+                    <div class="altern__header">
+                        <h3 class="altern__drogue">CBD</h3>
+                        <h3 class="altern__plante">&#8594;&#65038; Cacao</h3>
+                    </div>
+                    <p class="altern__texte">Ses fèves renferment de l’anandamide, <strong>stimulant la bonne humeur, la clarté mentale et la détente</strong>tout en favorisant une sensation de plaisir et de bien-être.</p>
                 </div>
-                <p class="altern__texte">Ses fèves renferment de l’anandamide, <strong>stimulant la bonne humeur, la clarté mentale et la détente</strong>tout en favorisant une sensation de plaisir et de bien-être.</p>
-                <a class="btn__click btn__click--primary" href="">Le plaisir du vrai cacao ↗︎</a>
+                <a class="btn__click btn__click--primary" href="https://www.reponsesbio.com/le-plaisir-psychoactif-du-vrai-cacao/">Le plaisir du vrai cacao &#8599;&#65038</a>
             </li>
-            <li class="altern__el">
-                <div class="altern__header">
-                    <h3 class="altern__drogue">Alcool</h3>
-                    <h3 class="altern__plante">→ Kava</h3>
+            <li id="alcool" class="altern__el">
+                <div class="altern__page">
+                    <div class="altern__header">
+                        <h3 class="altern__drogue">Alcool</h3>
+                        <h3 class="altern__plante">&#8594;&#65038; Kava</h3>
+                    </div>
+                    <p class="altern__texte">Sa racine est utilisée pour <strong>apaiser l’anxiété, favoriser la détente, améliorer l’humeur </strong>et soutenir la socialisation</p>
                 </div>
-                <p class="altern__texte">Sa racine est utilisée pour <strong>apaiser l’anxiété, favoriser la détente, améliorer l’humeur </strong>et soutenir la socialisation</p>
-                <a class="btn__click btn__click--primary" href="">Découvrez le Kava↗︎</a>
+                <a class="btn__click btn__click--primary" href="https://www.passeportsante.net/fr/Solutions/PlantesSupplements/Fiche.aspx?doc=kava_ps">Découvrez le Kava &#8599;&#65038</a>
             </li>
-            <li class="altern__el">
-                <div class="altern__header">
-                    <h3 class="altern__drogue">Sucre</h3>
-                    <h3 class="altern__plante">→ Miel</h3>
+            <li id="sucre" class="altern__el">
+                <div class="altern__page">
+                    <div class="altern__header">
+                        <h3 class="altern__drogue">Sucre</h3>
+                        <h3 class="altern__plante">&#8594;&#65038; Miel</h3>
+                    </div>
+                    <p class="altern__texte">Riche en sucres naturels, enzymes et antioxydants, il procure <strong>une énergie douce,  un réconfort sensoriel et soutient l’humeur.</strong></p>
                 </div>
-                <p class="altern__texte">Riche en sucres naturels, enzymes et antioxydants, il procure <strong>une énergie douce,  un réconfort sensoriel et soutient l’humeur.</strong></p>
-                <a class="btn__click btn__click--primary" href="">Bénéfices du miel ↗︎</a>
+                <a class="btn__click btn__click--primary" href="https://www.pressesante.com/benefices-du-miel-7-bonnes-raisons-den-manger/">Bénéfices du miel &#8599;&#65038</a>
             </li>
-            <li class="altern__el">
-                <div class="altern__header">
-                    <h3 class="altern__drogue">Viagra</h3>
-                    <h3 class="altern__plante">→ Gingembre</h3>
+            <li id="viagra" class="altern__el">
+                <div class="altern__page">
+                    <div class="altern__header">
+                        <h3 class="altern__drogue">Viagra</h3>
+                        <h3 class="altern__plante">&#8594;&#65038; Gingembre</h3>
+                    </div>
+                    <p class="altern__texte">Son rhizome contient du gingérol, dont l’action vasodilatatrice et <strong>stimulante favorise la circulation, contribuant au désir et la vitalité sexuelle</strong></p>
                 </div>
-                <p class="altern__texte">Son rhizome contient du gingérol, dont l’action vasodilatatrice et <strong>stimulante favorise la circulation, contribuant au désir et la vitalité sexuelle</strong></p>
-                <a class="btn__click btn__click--primary" href="">aphrodisiaque naturel ↗︎</a>
+                <a class="btn__click btn__click--primary" href="https://www.futura-sciences.com/sante/questions-reponses/sexualite-gingembre-il-vraiment-aphrodisiaque-6187/">aphrodisiaque naturel &#8599;&#65038</a>
             </li>
         </ul>
     </div>
   </section>
 
 
-  <footer class="footer">
+  <footer class="footer grille">
     <div class="footer__conteneur">
       <div class="footer__intro">
         <i></i>
-        <h3 class="loi__surTitre">EQUILIBRUM·PROTOCOL</h3>
+        <h3 class="article__surTitre">EQUILIBRUM·PROTOCOL</h3>
       </div>
 
       <nav class="footer__nav">

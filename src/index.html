@@ -36,13 +36,15 @@
 
 <body class="acceuil">
 
-  <header class="intro">
+  <header class="intro grille">
 
       <nav class="menu">
         <div class="menu__logo">
-          <img class="menu__ico" src="assets/images/nav_ico.svg" alt="icone filo grame, clickable pour remonter en haut du site web">
-          <h3 class="menu__titreProtocol menu__titreProtocol--court">Protocol</h3>
-          <h3 class="menu__titreProtocol menu__titreProtocol--long">Equilibrum·Protocol</h3>
+          <a class="menu__link" href="index.html#intro">
+            <img class="menu__ico" src="assets/images/nav_ico.svg" alt="icone filo grame, clickable pour remonter en haut du site web">
+            <h3 class="menu__titreProtocol menu__titreProtocol--court">Protocol</h3>
+            <h3 class="menu__titreProtocol menu__titreProtocol--long">Equilibrum·Protocol</h3>
+          </a>
         </div>
         <button class="menu__toggle">
           <img class="menu__burgeur" src="assets/images/burger.svg" alt="burger menu click"> 
@@ -60,45 +62,52 @@
         </div>
     </nav>  
 
-    <div class="intro__conteneur">
-      <p class="intro__surTitre">L'évolution fait la force</p>
-      <h1 class="intro__titre"><span class="intro__titreAccent">DUP :</span>toute l’actu.</h1>
-      <p class="intro__text">Depuis l'application de la loi DUP en Belgique (Dépénalisation Universelle des Psychoactifs), LUPIN en France (Légalisation Universelle des Psychoactifs Industriels et Naturels) la criminalité est en baisse et le PIB augmente dans les pays concernés. Avez-vous suivi l’actualité ?</p>
-      <div class="btn">
-        <a href="#loi"><button class="btn__click btn__click--primary">Besoin d’un petit recap &#8595</button></a>
-        <a href="#economie"><button class="btn__click btn__click--light">L'après-crise de 2029</button></a>
+    <div id="intro" class="intro__conteneur grille">
+      <div class="intro__grille grille__1--3">
+        <p class="intro__surTitre">L'évolution fait la force</p>
+        <h1 class="intro__titre"><span class="intro__titreAccent">DUP :</span>toute l’actu.</h1>
+        <p class="intro__text">Depuis l'application de la loi DUP en Belgique (Dépénalisation Universelle des Psychoactifs), LUPIN en France (Légalisation Universelle des Psychoactifs Industriels et Naturels) la criminalité est en baisse et le PIB augmente dans les pays concernés. Avez-vous suivi l’actualité ?</p>
+        <div class="btn">
+          <a href="#loi"><button class="btn__click btn__click--primary">Besoin d’un petit recap &#8595</button></a>
+          <a href="#economie"><button class="btn__click btn__click--light">L'après-crise de 2029</button></a>
+        </div>
       </div>
     </div>
   </header>
 
-  <section id="loi" class="loi">
-    <div class="loi__conteneur">
-      <p class="loi__surTitre">Une europe · de nouvelles lois</p>
-      <h2>La Loi DUP ou LUPIN ?</h2>
-      <p>La Légalisation Universelle des Psychoactifs Industriels et Naturels (LUPIN) est votée au sénat le 23 mars 2033 en France. En Belgique, la loi de Dépénalisation Universelle des Psychoactifs (DUP) est votée le 5 décembre 2033.</p>
-      <div class="loi__senat">
-        <a href="https://www.eerstekamer.nl/zoeken_in_volledige_tekst?_charset_=UTF-8&q=cannabis" class="btn__click btn__click--primary">Sénat Pays-Bas &#8599;&#65038</a>
-        <a href="https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N53231" class="btn__click btn__click--primary">Sénat Français &#8599;&#65038</a>
-        <a href="https://www.senate.be/www/?MIval=index_senate&MENUID=24000&LANG=fr" class="btn__click btn__click--primary">Sénat Belgique &#8599;&#65038</a>
+  <section id="loi" class="article">
+    <div class="article__conteneur grille">
+      <div class="article__grille grille__1--3">
+        <p class="article__surTitre">Une europe · de nouvelles lois</p>
+        <h2>La Loi DUP ou LUPIN ?</h2>
+        <p>La Légalisation Universelle des Psychoactifs Industriels et Naturels (LUPIN) est votée au sénat le 23 mars 2033 en France. En Belgique, la loi de Dépénalisation Universelle des Psychoactifs (DUP) est votée le 5 décembre 2033.</p>
+        <div class="article__senat">
+          <a href="https://www.eerstekamer.nl/zoeken_in_volledige_tekst?_charset_=UTF-8&q=cannabis" class="btn__click btn__click--primary">Sénat Pays-Bas &#8599;&#65038</a>
+          <a href="https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N53231" class="btn__click btn__click--primary">Sénat Français &#8599;&#65038</a>
+          <a href="https://www.senate.be/www/?MIval=index_senate&MENUID=24000&LANG=fr" class="btn__click btn__click--primary">Sénat Belgique &#8599;&#65038</a>
+        </div>
       </div>
 
-      <div class="cadreInfo">
-        <div class="cadreInfo__img">
+      <div class="cadreInfo grille">
+        <div class="cadreInfo__img grille__1--2">
           <img src="assets/images/Lupin.png" srcset="assets/images/Lupin.png 1x,assets/images/Lupin@2x.png 2x" alt="image sur le texte de loi fictife sur les supstences psycoctife de la france ">
         </div>
-        <div class="cadreInfo__contenu">
-          <div class="cadreInfo__header">
-            <i class="fa-regular fa-circle-question"></i>
-            <h3>le savais tu ?</h3>
+
+        <div class="cadreInfo__section grille__3--5">
+          <div class="cadreInfo__contenu ">
+            <div class="cadreInfo__header">
+              <i class="fa-regular fa-circle-question"></i>
+              <h3>le savais tu ?</h3>
+            </div>
+            <p>Dans les années 70, la nicotine était commercialisée comme pesticide. En effet, la plante de tabac utilise la nicotine pour attaquer le système nerveux des insectes.  La nicotine imite une substance essentielle : l’acétylcholine, entraînant la mort de l'insecte. Chez l'humain, elle exploite les mêmes récepteurs et c'est ce «détournement » qui participe à son potentiel addictif.</p>
           </div>
-          <p>Dans les années 70, la nicotine était commercialisée comme pesticide. En effet, la plante de tabac utilise la nicotine pour attaquer le système nerveux des insectes.  La nicotine imite une substance essentielle : l’acétylcholine, entraînant la mort de l'insecte. Chez l'humain, elle exploite les mêmes récepteurs et c'est ce «détournement » qui participe à son potentiel addictif.</p>
+          <a href="calculateur.html#calculateur"><button class="btn__click btn__click--dark">Dose ta nicotine &#8594;&#65038;</button></a>
         </div>
-        <a href="calculateur.html#calculateur"><button class="btn__click btn__click--dark">Dose ta nicotine &#8594;&#65038;</button></a>
       </div>
     </div>
   </section>
 
-  <section class="flashCard">
+  <section class="flashCard grille">
 
     <div class="flashCard__conteneur">
 
@@ -106,6 +115,7 @@
         <div class="flashCard__inner">
           <div class="flashCard__face flashCard__face--front">
             <h3>Comment la guerre en Ukraine a influencé l'économie européenne ?</h3>
+            <img class="menu__ico" src="../assets/images/click_ico.svg" alt="clicker sur le flashcard">
           </div>
         
           <div class="flashCard__face flashCard__face--back">
@@ -114,7 +124,7 @@
                 <h3>Bulle spéculative d’un marché surcoté</h3>
               </div>
               <div class="flashCard__body">
-                <p>La fin de la guerre provoque l’éclatement de la bulle spéculative liée aux technologies d’IA. La chute d’un marché dopé entraîne les secteurs dépendants de l’IA, fragilisés par la perte de confiance face aux contenus peu fiables.</p>
+                <p>La fin de la guerre provoque l’éclatement de la bulle spéculative des technologies d’IA. La chute d’un marché dopé entraîne les secteurs utilisent l’IA, fragilisés par la perte de confiance face aux contenus peu fiables.</p>
               </div>
             </div>
           </div>
@@ -126,6 +136,7 @@
         <div class="flashCard__inner">
           <div class="flashCard__face flashCard__face--front">
             <h3>Qui bénéficie des revenus engendrés par les taxes de la DUP ?</h3>
+            <img class="menu__ico" src="../assets/images/click_ico.svg" alt="clicker sur le flashcard">
           </div>
         
           <div class="flashCard__face flashCard__face--back">
@@ -146,6 +157,7 @@
         <div class="flashCard__inner">
           <div class="flashCard__face flashCard__face--front">
             <h3>Comment un excès de pétrole a-t-il influencé le développement des produits de synthèse ?</h3>
+            <img class="menu__ico" src="../assets/images/click_ico.svg" alt="clicker sur le flashcard">
           </div>
         
           <div class="flashCard__face flashCard__face--back">
@@ -164,35 +176,40 @@
     </div>
   </section>
 
-  <section id="economie" class="economie">
+  <section id="economie" class="article">
+    <div class="article__conteneur grille">
+      <div class="article__grid grille__1--3">
+        <p class="article__surTitre">Emploi · Criminalité · Fiscalité</p>
+        <h2>L'après-crise de 2029</h2>
+        <p class="article__texteIntro article__texteIntro--hauteur">Une étudiante en économie qui vous explique les tenants et aboutissants de l’influence de la loi DUP sur l'économie belge.</p>
+      </div>
 
-    <div class="loi__conteneur">
-      <p class="loi__surTitre">Emploi · Criminalité · Fiscalité</p>
-      <h2>L'après-crise de 2029</h2>
-      <p>Une étudiante en économie qui vous explique les tenants et aboutissants de l’influence de la loi DUP sur l'économie belge.</p>
-
-      <div class="cadreInfo">
-        <div class="cadreInfo__img">
+      <div class="article__cadreInfo cadreInfo grille">
+        <div class="cadreInfo__video grille__1--2">
           <video controls playsinline poster="assets/images/miniature.png">
             <source src="assets/images/effets_loi_DUP.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="cadreInfo__contenu">
-          <div class="cadreInfo__header">
-            <i class="fa-regular fa-circle-question"></i>
-            <h3>Résumé</h3>
+
+        <div class="cadreInfo__section grille__3--5">
+          <div class="cadreInfo__contenu">
+            <div class="cadreInfo__header">
+              <i class="fa-regular fa-circle-question"></i>
+              <h3>Résumé</h3>
+            </div>
+            <p>Laure.S, mène une étude sur l’incidence de la DUP sur le taux de chômage chez les moins de 45 ans. Lors de notre entretien, elle nous explique que cette politique a contribué à une baisse de la criminalité liée au trafic de stupéfiants. La récupération des revenus auparavant captés par le crime a largement permis d'augmenter les recettes fiscales, de contribuer à la création d’emploi notamment dans les firmes pharmaceutiques qui connaissent un nouvel envol.</p>
           </div>
-          <p>Laure.S, mène une étude sur l’incidence de la DUP sur le taux de chômage chez les moins de 45 ans. Lors de notre entretien, elle nous explique que cette politique a contribué à une baisse de la criminalité liée au trafic de stupéfiants. La récupération des revenus auparavant captés par le crime a largement permis d'augmenter les recettes fiscales, de contribuer à la création d’emploi notamment dans les firmes pharmaceutiques qui connaissent un nouvel envol.</p>
+          <a href="histoir.html#Vice"><button class="btn__click btn__click--dark">Lire Sciences et Vices &#8594;&#65038;</button></a>
         </div>
-        <button class="btn__click btn__click--dark">Lire Sciences et Vices &#8599;&#65038</button>
       </div>
     </div>
   </section>
-  <footer class="footer">
-    <div class="footer__conteneur">
+
+  <footer class="footer grille">
+    <div class="footer__conteneur grille__1--3">
       <div class="footer__intro">
         <i></i>
-        <h3 class="loi__surTitre">EQUILIBRUM·PROTOCOL</h3>
+        <h3 class="article__surTitre">EQUILIBRUM·PROTOCOL</h3>
       </div>
 
       <nav class="footer__nav">
@@ -206,7 +223,7 @@
 
       <div class="btn">
         <a class="btn__click btn__click--primary" href="">Crédit &#8599;&#65038</a>
-        <a class="btn__click btn__click--primary" href="">Castudy &#8599;&#65038</a>
+        <a class="btn__click btn__click--primary" href="http://www.elodiesomer.be/projets/TFA2026/castudy/">Castudy &#8599;&#65038</a>
       </div>
       
       <p class="footer__outro">ŒUVRE DE FICTION. Ce site présente un monde imaginaire de sensibilisation où les substances seraient légalisées et strictement régulées. Aucun produit, service ou conseil médical réel n'est proposé. © 2035 Département fictif de l'Équilibre.</p>

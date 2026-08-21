@@ -18,3 +18,21 @@
     flex-direction: row;
     gap: $size-s-tel;
 }
+@media (min-width: 1000px){
+    .altern__el{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: $size-text-pc;
+        .btn__click{
+            margin-left: auto;
+            overflow: hidden;
+            white-space: nowrap; //pour qu'il sois sur une ligne
+            flex-shrink: 0; //et qu'il y ais pas d'over flow
+        }
+    }
+    .altern__page{
+        display: flex;
+        flex-direction: column;
+    }
+}
