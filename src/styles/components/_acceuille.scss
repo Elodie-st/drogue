@@ -20,7 +20,7 @@
     top: 0;
     background-image: url('/assets/images/image__neuron.gif');
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-position: center;
     background-size: cover; 
     z-index: 1;
@@ -40,8 +40,7 @@
     font-family: "Plus Jakarta Sans", sans-serif;
     line-height: 1;
     .intro__titreAccent{
-        color: $c-with;
-        text-shadow: $c-mauve 1px 1px 20px;
+        color: $c-mauve;
     }
 }
 .intro__titre--noir{

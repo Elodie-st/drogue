@@ -14,7 +14,7 @@ p{
 h2 { 
   @include titre--h2();
 }
-h3 { 
+h3, .titre__style--trois { 
   @include titre--h3();
 }
 

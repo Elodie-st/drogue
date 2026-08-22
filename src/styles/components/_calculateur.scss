@@ -118,13 +118,10 @@
     height: 70px;
     position: absolute;
     top: 0;
-    left: 50%;
-   // transform: translateX(-50%);
+    left: 25%;
     border-radius: 50%;
     background-color: $c-noir;
     border: 15px solid $c-mauve;
-   // animation: scrollOeuil linear;
-   // animation-timeline: scroll(root block);
     &--zom{
         transform: scale(1.2);
     }
