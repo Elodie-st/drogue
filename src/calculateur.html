@@ -65,8 +65,8 @@
         <p class="intro__surTitre">L’opti-dopage</p>
         <h1 class="intro__titre">Maîtriser sa <span class="intro__titreAccent">Dose</span></h1>
         <div class="btn">
-          <a href="#calculateur"><button class="btn__click btn__click--primary">Calculateur &#8595</button></a>
-          <a href="#drogue"><button class="btn__click btn__click--light">Votre psycoactif</button></a>
+          <a class="btn__click btn__click--primary" href="#calculateur">Calculateur &#8595;</a>
+          <a class="btn__click btn__click--light" href="#drogue">Votre psycoactif</a>
         </div>
       </div>
     </div>
@@ -91,9 +91,9 @@
       
         <p class="groupe__texte">Amélioration de l’endurance et développement musculaire. Un atout pour les sportifs de tous niveaux.</p>
         <div class="groupe__btn">
-          <a href="alternative.html#d_bol"><button class="group__link group__link--rose">D-bol</button></a>
-          <a href="alternative.html#amphetamine"><button class="group__link group__link--rose">Amphétamine</button></a>
-          <a href="alternative.html#epo"><button class="group__link group__link--rose">EPO (érythropoiétine)</button></a>     
+          <a class="group__link group__link--rose" href="alternative.html#d_bol">D-bol</a>
+          <a class="group__link group__link--rose" href="alternative.html#amphetamine">Amphétamine</a>
+          <a class="group__link group__link--rose" href="alternative.html#epo">EPO (érythropoiétine)</a>     
         </div>
       </div>
 
@@ -105,10 +105,10 @@
       
         <p class="groupe__texte">Libération de l’imagination et perception élargie. Une nouvelle dimension pour les artistes, et les inventeurs</p>
         <div class="groupe__btn">
-          <a href="alternative.html#lsd"><button class="group__link group__link--bleu">LSD</button></a>
-          <a href="alternative.html#thc"><button class="group__link group__link--bleu">THC</button></a>
-          <a href="alternative.html#mdma"><button class="group__link group__link--bleu">Ecstasy</button></a>  
-          <a href="alternative.html#cocaine"><button class="group__link group__link--bleu">Cocaïne</button></a>     
+          <a class="group__link group__link--bleu" href="alternative.html#lsd">LSD</a>
+          <a class="group__link group__link--bleu" href="alternative.html#thc">THC</a>
+          <a class="group__link group__link--bleu" href="alternative.html#mdma">Ecstasy</a>  
+          <a class="group__link group__link--bleu" href="alternative.html#cocaine">Cocaïne</a>     
         </div>
       </div>
 
@@ -126,10 +126,10 @@
       
         <p class="groupe__texte">Optimisation de la concentration accrue et mémoire renforcée. Un atout majeur pour les étudiants.</p>
         <div class="groupe__btn">
-          <a href="alternative.html#modafinil"><button class="group__link group__link--lila">Modafinil</button></a>
-          <a href="alternative.html#ritaline"><button class="group__link group__link--lila">Ritaline</button></a>
-          <a href="alternative.html#nicotine"><button class="group__link group__link--lila">Nicotine</button></a>     
-          <a href="alternative.html#cafeine"><button class="group__link group__link--lila">Caféine</button></a> 
+          <a class="group__link group__link--lila" href="alternative.html#modafinil">Modafinil</a>
+          <a class="group__link group__link--lila" href="alternative.html#ritaline">Ritaline</a>
+          <a class="group__link group__link--lila" href="alternative.html#nicotine">Nicotine</a>     
+          <a class="group__link group__link--lila" href="alternative.html#cafeine">Caféine</a> 
         </div>
       </div>
 
@@ -141,10 +141,10 @@
     
         <p class="groupe__texte">Bien-être, sérénité et équilibre émotionnel renforcés, pour un épanouissement personnel accru.</p>
         <div class="groupe__btn">
-          <a href="alternative.html#cbd"><button class="group__link group__link--vert">CBD</button></a>
-          <a href="alternative.html#viadra"><button class="group__link group__link--vert">Sucre</button></a>
-          <a href="alternative.html#sucre"><button class="group__link group__link--vert">Viagra</button></a>     
-          <a href="alternative.html#alcool"><button class="group__link group__link--vert">Alcool</button></a> 
+          <a class="group__link group__link--vert" href="alternative.html#cbd">CBD</a>
+          <a class="group__link group__link--vert" href="alternative.html#viadra">Sucre</a>
+          <a class="group__link group__link--vert" href="alternative.html#sucre">Viagra</a>     
+          <a class="group__link group__link--vert" href="alternative.html#alcool">Alcool</a> 
         </div>
       </div>
 
@@ -161,7 +161,7 @@
       <div class="calculateur__calcule grille__1--2">
         <div class="calculateur__donner">
           <label class="calculateur__TitreDonner">Substance</label>
-          <select class="calculateur__input" name="drogue" id="drogue-select" value="">
+          <select class="calculateur__input" name="drogue" id="drogue-select" >
             <option value="Choix">Choisissez une substance</option>
             <option value="D_Bol">D-Bol</option>
             <option value="EPO">EPO</option>
@@ -186,7 +186,7 @@
           <div class="calculateur__donner">
             <label class="calculateur__TitreDonner">Poids</label>
             <div class="calculateur__uniter">
-              <input class="calculateur__input" id="poids" type="number" value="" placeholder="00"/>
+              <input class="calculateur__input" id="poids" type="number" value="" placeholder="00">
               <p>kg</p>
             </div>
           </div>
@@ -194,7 +194,7 @@
           <div class="calculateur__donner">
             <label class="calculateur__TitreDonner">Taille</label>
             <div class="calculateur__uniter">
-              <input class="calculateur__input" id="taille" type="number" value="" placeholder="000"/>
+              <input class="calculateur__input" id="taille" type="number" value="" placeholder="000">
               <p>cm</p>
             </div>
           </div>
@@ -243,8 +243,7 @@
           <p>« Je pensais que plus d’expériences signifiait forcément plus de créativité. J’ai compris qu’il fallait aussi laisser de la place à mon propre esprit. En diminuant, j’ai retrouvé une forme de liberté que je croyais avoir perdue. »</p>
           <p class="cadreInfo__name">- Luca, étudiant en option artistique</p>
         </div>
-        <a href="histoir.html#temoignage__histoir"><button class="btn__click btn__click--dark">Lire d’autre temoigange &#8594;&#65038;</button></a>
-      </div>
+        <a class="btn__click btn__click--dark" href="histoir.html#temoignage__histoir">Lire d’autre temoigange &#8594;&#65038;</a>
     </div>
   </section>
   <footer class="footer grille">
@@ -264,8 +263,8 @@
       </nav>
 
       <div class="btn">
-        <a class="btn__click btn__click--primary" href="credit.html">Crédit &#8599;&#65038</a>
-        <a class="btn__click btn__click--primary" href="http://www.elodiesomer.be/projets/TFA2026/castudy/">Castudy &#8599;&#65038</a>
+        <a class="btn__click btn__click--primary" href="credit.html">Crédit &#8599;&#65038;</a>
+        <a class="btn__click btn__click--primary" href="http://www.elodiesomer.be/projets/TFA2026/castudy/">Castudy &#8599;&#65038;</a>
       </div>
       
       <p class="footer__outro">ŒUVRE DE FICTION. Ce site présente un monde imaginaire de sensibilisation où les substances seraient légalisées et strictement régulées. Aucun produit, service ou conseil médical réel n'est proposé. © 2035 Département fictif de l'Équilibre.</p>

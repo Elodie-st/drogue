@@ -76,7 +76,9 @@
             display: none;
         }
     }
-
+    .menu--open .menu__toggle{
+        box-shadow: 0px 0px 20px $c-mauve;
+    }
     .menu--open .menu__liste{
         display: block;
         background-color: $c-lila;
@@ -129,7 +131,7 @@
             filter: brightness(1.2);
         }
         &.active{
-            text-shadow: $c-text 1px 1px 3px;
+            color: $c-noir;
         }
         @media (min-width: 950px) {
             font-size: $size-text-pc;
