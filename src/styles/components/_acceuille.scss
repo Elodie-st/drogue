@@ -19,6 +19,7 @@
     left: 0;
     top: 0;
     background-image: url('/assets/images/image__neuron.gif');
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     background-position: center;
@@ -28,8 +29,13 @@
     }
     &--degrader {
         &::before {
-            background: linear-gradient(to bottom, transparent, mistyrose),
+            background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)),
              url("/assets/images/image__neuron.gif");
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover; 
+            background-repeat: no-repeat;
         }
     }
 }
@@ -39,6 +45,8 @@
     font-size: clamp($size-titre-tel, 11.364vw - 4.636px, $size-titre-pc);
     font-family: "Plus Jakarta Sans", sans-serif;
     line-height: 1;
+    margin-bottom: clamp($size-sousTitre-tel, 4.688vw + 15.125px, $size-1medium-pc);
+    margin-top: clamp($size-sousTitre-tel, 1.25vw + 29.5px, $size-xxl-pc);
     .intro__titreAccent{
         color: $c-mauve;
     }

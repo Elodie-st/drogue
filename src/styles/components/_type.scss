@@ -23,7 +23,12 @@ h3, .titre__style--trois {
     @include conteneur();
   }
 }
-
+.lien__texte{
+  color: $c-mauve;
+  font-style: italic;
+  //text-decoration: none;
+  cursor: pointer;
+}
 //footer
 .footer{
   background-color: $c-noir;

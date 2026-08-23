@@ -21,6 +21,7 @@
     font-family: "Plus Jakarta Sans", sans-serif;
     color: $c-noir;
     font-size:clamp(#{$size-xl-tel}, 3.594vw + 15.062px, #{$size-sousTitre-pc});
+    margin: clamp(30px, 0.781vw + 27.188px, 35px) 0 clamp(30px, 0.781vw + 27.188px, 35px) 0;
 }
 
 @mixin titre--h3(){
