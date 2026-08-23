@@ -1,3 +1,100 @@
+//page de chargement
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00096A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 40;
+    .loader__lettre{
+        background: linear-gradient(#DE192A, #780E17) ;
+        z-index: 3;
+        padding: $size-m-tel $size-medium-tel;
+        clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+    }
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url(('../assets/images/chargement_tel.png'));
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-size: cover; 
+        z-index: 1;
+        @media (min-width: 600px){
+            background-image: url(('../assets/images/chargement_tab.png'));
+        }
+        @media (min-width: 950px){
+            background-image: url(('../assets/images/chargement_pc.png'));
+        }
+    }
+}
+.lettre{
+    color: $c-with;
+    font-size: clamp(#{$size-text-tel}, 5.303vw - 2.03px, #{$size-sousTitre-pc});
+    font-weight: bold;
+    letter-spacing: $size-xxs-tel;
+    margin-bottom: 150px;
+    animation: flash 1.2s linear infinite;
+    z-index: 2;
+}
+@keyframes flash {
+    0%{
+        color: #6c77f0;
+        text-shadow: 0 0 7px #196EDE;
+    }
+    90%{
+        color: $c-with;
+    }
+    100%{
+        color: #6f7af5;
+        text-shadow: 0 0 7px #196EDE;
+    }
+}
+.lettre:nth-child(1){
+    animation-delay: 0.1s;
+}
+.lettre:nth-child(2){
+    animation-delay: 0.2s;
+}
+.lettre:nth-child(3){
+    animation-delay: 0.3s;
+}
+.lettre:nth-child(4){
+    animation-delay: 0.4s;
+}
+.lettre:nth-child(5){
+    animation-delay: 0.5s;
+}
+.lettre:nth-child(6){
+    animation-delay: 0.6s;
+}
+.lettre:nth-child(7){
+    animation-delay: 0.7s;
+}
+.lettre:nth-child(8){
+    animation-delay: 0.8s;
+}
+.lettre:nth-child(9){
+    animation-delay: 0.9s;
+}
+.lettre:nth-child(10){
+    animation-delay: 1s;
+}
+.fondu-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+    pointer-events: none;
+}
+
 //section intro
 .intro {
     position: relative;
@@ -5,7 +102,7 @@
     overflow: hidden;
     &__conteneur{
         position: relative;
-        margin: clamp(132px, 2.879vw + 122.212px, 151px) 0px clamp($size-titre-tel, 0.303vw + 47.97px, $size-sousTitre-pc) 0px; 
+        margin: clamp(132px, 2.879vw + 122.212px, 151px) 0px clamp(#{$size-titre-tel}, 0.303vw + 47.97px, #{$size-sousTitre-pc}) 0px; 
         z-index: 2;
     }
 }
@@ -30,7 +127,7 @@
     &--degrader {
         &::before {
             background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)),
-             url("../assets/images/image_neuron.gif'");
+             url("../assets/images/image_neuron.gif");
             width: 100%;
             height: 100%;
             background-position: center;
@@ -42,11 +139,11 @@
 
 .intro__titre{
     color: $c-with;
-    font-size: clamp($size-titre-tel, 11.364vw - 4.636px, $size-titre-pc);
+    font-size: clamp(#{$size-titre-tel}, 11.364vw - 4.636px, #{$size-titre-pc});
     font-family: "Plus Jakarta Sans", sans-serif;
     line-height: 1;
-    margin-bottom: clamp($size-sousTitre-tel, 4.688vw + 15.125px, $size-1medium-pc);
-    margin-top: clamp($size-sousTitre-tel, 1.25vw + 29.5px, $size-xxl-pc);
+    margin-bottom: clamp(#{$size-sousTitre-tel}, 4.688vw + 15.125px, #{$size-1medium-pc});
+    margin-top: clamp(#{$size-sousTitre-tel}, 1.25vw + 29.5px, #{$size-xxl-pc});
     .intro__titreAccent{
         color: $c-mauve;
     }
