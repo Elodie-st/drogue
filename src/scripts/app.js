@@ -1,16 +1,19 @@
 "use strict"
 //chargement
 const loader = document.querySelector('.loader')
-window.addEventListener('load', () => {
-    setTimeout(() =>{
-       loader.classList.add('fondu-out'); 
-       setTimeout(() => {
-        loader.style.display = 'none';
-    }, 400);
-    
-    }, 4000);
-    
-});
+if (loader) {
+    window.addEventListener('load', () => {
+        setTimeout(() =>{
+        loader.classList.add('fondu-out'); 
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 400);
+        
+        }, 4000);
+        
+    }); 
+}
+
 
 //flash carte
 document.querySelectorAll('.flashCard__carte').forEach(carte => {
